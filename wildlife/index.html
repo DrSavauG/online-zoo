@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Wildlife</title>
+</head>
+
+<body>
+    <!-- 1. Блок Header +10 -->
+    <header>
+        <!-- Блок Header содержит только логотип и панель навигации. -->
+    
+            <!-- Логотип содержит два элемента - svg-иконку и текст. -->
+            <figure class="logo">
+                <img src="./assets/antlers.svg" alt="deer antlers" width="70" height="60">
+                <h1>WILDLIFE</h1>
+            </figure>
+            <!-- На странице обязательно должен присутствовать один элемент <h1> -->
+        <nav>
+            <!-- Панель навигации состоит из четырёх элементов: двух ссылок, иконки поиска и кнопки "Sign in" . -->
+            <ul>
+                <!-- Верстается в виде ненумерованного списка: ul > li > a. -->
+                <li><a>Blog</a></li>
+                <li><a>Contacts</a></li>
+                <li><img src="./assets/vector.svg" alt="magnifying glass" width="32" height="32"></li>
+                <!--кнопка "Sign in" верстается не как ссылка, а тегом button -->
+                <li><button>Sign in</button></li>
+                <!--  -->
+                <!--  -->
+                <!-- Все элементы панели навигации должны быть интерактивными -->
+                <!--  -->
+                <!--    -->
+                <!--  -->
+            </ul>
+        </nav>
+    </header>
+
+        <!-- 2. Блок Survival +10 -->
+        <aside class="survival">
+            <!-- У блоков Header и Survival общее фоновое изображение -->
+            <div class="survival__head">
+                <!-- Расстояние между буквами заголовка регулируется css-свойством letter-spacing -->
+                <h3>Survival</h3>
+            </div>
+            <div class="survival__text">
+                <!-- Разрывы строк в текстовом блоке регулируются шириной блока без использования тега <br> -->
+                <p>What this means is that we exist to help protect our environment and do in numbers of ways. You can
+                    save the planet by donation.</p>
+                </div>
+                <div class="survival__button">
+                <!-- Кнопка Donate интерактивная. Используются указанные в макете стили для различных состояний кнопки -->
+                <button>Donate</button></div>
+            </aside>
+            
+            <main>
+                <!-- 3. Блок Latest articles +10 -->
+                <div class="latest_articles">
+                    <div class="latest_articles__head">
+                        <h3>Latest articles</h3>
+                        <p>Breaking news from the wild</p>
+                    </div>
+                    <div class="latest_articles__body">
+
+                        <!-- Для вёрстки трёх изображений в ряд лучше использовать flexbox или grid. Float использовать можно. <table> - нельзя! -->
+                            <!-- Надписи поверх изображений можно разместить при помощи абсолютного позиционирования. Менее семантически правильный, но более простой в реализации вариант - использовать для добавления изображений css-свойство background-image. -->
+                            <!-- Стрелки слайдера интерактивны. -->
+                        </div>
+                        
+                        <!-- 4. Блок Get notified +10 -->
+                        <div class="get_notified">
+                            <h3>Get notified about new amazing articles</h3>
+                            <!-- Для отправки данных используется тег <form> -->
+                            <form>
+                                <!-- Поле email верстается тегом <input> с типом text или email (оба варианта допустимы),  -->
+                                <!-- Надпись 'email' это placeholder. -->
+                                <input placeholder="строка" type="email" name=""> input</input>
+
+                                <!-- поле send верстается тегом <input> с типом submit -->
+                                    <input type="submit" name=""> Send</input>
+                            </form>
+                    </div>
+                    
+                        
+                    </div>
+
+    </main>
+    <!-- 5. Блок Footer +10 -->
+    <footer>
+        <!-- Блок Footer содержит логотип, дополнительную панель навигации и ссылки на социальные сети -->
+        <figure class="footer__logo">
+            <!-- Логотип полностью повторяет логотип блока Header. Речь о визуальном сходстве, а не использовании точно таких же тегов -->
+            <img src="./assets/antlers.svg" alt="deer antlers" width="70" height="60">
+            <h>WILDLIFE</h>
+
+        </figure>
+
+    
+        <nav class="footer__nav">
+            <!-- Дополнительная панель навигации и ссылки на социальные сети верстаются в виде ненумерованных списков: ul > li > a -->
+            <ul class="footer__nav__list">
+                <li><a class="footer__a">Articles</a></li>
+                <li><a class="footer__a">About us</a></li>
+                <li><a class="footer__a">Learn more</a></li>
+            </ul>
+
+        </nav>
+            <!-- виде ненумерованных списков: ul > li > a  -->
+        <ul class="footer__social">
+            <!-- Иконки социальных сетей верстаются с использованием svg-файлов в качестве фоновых изображений -->
+            <li><a class="footer__logo"><img src="./assets/facebook.svg" width="40" height="40px" alt="facebook logo"></a></li>
+            <li><a class="footer__logo"><img src="./assets/instagram.svg" width="40" height="40px" alt="instagram logo"></a></li>
+            <li><a class="footer__logo"><img src="./assets/pinterest.svg" width="40" height="40px" alt="pinterest logo"></a></li>
+            <!-- В footer приложения замените иконку Telegram на иконку YouTube со ссылкой на видео. -->
+            <li><a class="footer__logo"><img src="./assets/youtube_green.svg" width="40" height="40px" alt="youtube logo"></a></li>
+        </ul>
+
+
+        <!-- Все ссылки в футере должны быть интерактивными -->
+    </footer>
+</body>
+
+</html>
