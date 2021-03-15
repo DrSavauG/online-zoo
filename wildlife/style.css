@@ -1,0 +1,382 @@
+/* vj mine */
+/* header */
+body {
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.head__all {
+    width: 100%;
+    height: 780px;
+    background: #021b0e;
+    /* user-select: none; */
+    /* выеделение юзером */
+}
+
+
+.head__content {
+    margin-top: 1px;
+    height: 779px;
+    width: 1440px;
+    background-image: url(./assets/fox.png);
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    width: 1440px;
+    height: 60px;
+    display: flex;
+    padding-top: 19px;
+    flex-direction: row;
+
+}
+
+.logo_wildlife {
+    font-family: 'Roboto', sans-serif;
+    color: #F7F7F7;
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    line-height: 60px;
+}
+
+.logo {
+    margin: 0px 0 0 120px;
+}
+
+.navigation {
+    width: 480px;
+    margin-right: 120px;
+    margin-left: auto;
+    position: relative;
+    text-align: center;
+
+}
+
+.navigation__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+}
+
+
+ul,
+li {
+    list-style-type: none;
+    margin-left: 0;
+    /* Отступ слева в браузере IE и Opera */
+    padding-left: 0;
+    /* Отступ слева в браузере Firefox, Safari, Chrome */
+
+}
+
+.navigation__text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 60px;
+    color: #F7F7F7;
+    margin-top: 0px;
+    text-align: auto;
+    transition: 0.3s linear;
+}
+
+#contacts {
+    padding-left: .1em;
+}
+
+.navigation__text:hover {
+    color: #CD6326;
+    cursor: pointer;
+    /* underline как-то некрасиво смотрится */
+    /* text-decoration: underline; */
+}
+
+.navigation__img {
+    margin-left: 2px;
+    width: 32px;
+    height: 32px;
+    background-image: url("./assets/vector.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    padding-bottom: 0px;
+    transition: 0.3s linear;
+
+}
+
+.navigation__img:hover {
+    background-image: url("./assets/vector-orange.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.navigation__list button {
+    padding-top: 2px;
+    padding-bottom: 0px;
+    width: 120px;
+    height: 50px;
+    background-color: Transparent;
+    border: 2px solid #CD6326;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    color: #F7F7F7;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.navigation__list button:hover {
+    background-color: #CD6326;
+    padding-top: 1px;
+}
+
+.navigation__list button:focus {
+    background: #8F5613;
+    border: 2px solid #8F5613;
+}
+
+/* aside ---------------------------*/
+
+.survival {
+    display: flex;
+    width: 274px;
+    height: 340px;
+    margin-left: 120px;
+    margin-top: 120px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.survival__header {
+    width: 199px;
+    height: 72px;
+}
+
+h1 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px;
+    /* <!-- Расстояние между буквами заголовка регулируется css-свойством letter-spacing --> */
+    letter-spacing: 2px;
+    color: #CD6326;
+    margin-top: 1px;
+}
+
+.survival__text {
+    width: 274px;
+    height: 108px;
+}
+
+.survival__text p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #F7F7F7;
+    margin-top: 1px;
+}
+
+.survival button {
+    width: 160px;
+    height: 60px;
+    background: #CD6326;
+    border-radius: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
+    color: #F7F7F7;
+    border: 0px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+/* <!-- Кнопка Donate интерактивная. Используются указанные в макете стили для различных состояний кнопки --> */
+
+.survival button:hover {
+    background-color: #E39128;
+    padding-bottom: 3px;
+}
+
+.survival button:focus {
+    background: #8F5613;
+    border: 2px solid #8F5613;
+}
+
+/* main --------------------------- */
+
+.main_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    top: 780px;
+    margin-top: 0px;
+
+}
+
+main {
+    width: 1440px;
+    height: 1368px;
+    margin: auto;
+}
+
+.latest_articles {
+    margin-top: 120px;
+}
+
+.latest_articles__header {
+
+    width: 332px;
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-top: 123px; */
+    /* position: absolute; */
+    width: 324px;
+    /* height: 72px; */
+    /* left: 558px; */
+    margin: auto;
+}
+
+h2 {
+    padding-top: 1px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: #333333;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+sh2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #666666;
+}
+
+/* slider------------------- */
+
+
+.latest_articles__body {
+    height: 360px;
+    margin-top: 120px;
+}
+
+.slider-content {
+    margin: 0 120px 0 120px;
+    display: flex;
+    /*  */
+    justify-content: space-between;
+    /*  */
+    
+}
+
+figure button {
+    margin: 0;
+    height: 5px;
+    width: 5px;
+}
+
+.slider__arrow {
+    margin-left: 0px;
+    background-image: url("./assets/arrow_lefr.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 30px;
+    height: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+.animal-logo {
+    width: 300px;
+    height: 360px;
+    margin: 0;
+    
+}
+
+#deer {
+    background-image: url("./assets/deer.jpg")
+}
+
+#squirrel {
+    background-image: url("./assets/squirrel.jpg")
+}
+
+#bird {
+    background-image: url("./assets/bird.jpg")
+}
+h4, .figure-caption-text{
+    color: #F7F7F7;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    margin: auto;
+    text-align: center;
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 36px;
+    margin-bottom: 0px;
+    margin-top: 247px;
+
+}
+
+.figure-caption-text {
+    font-size: 17px;
+    line-height: 27px;
+    margin-top: 10px;
+    height: 27px;
+}
+
+#arrow_right {
+    /* transform: rotate(180deg);
+     */
+     background-image: url("./assets/arrow-right.svg");
+     margin-top: 147px;
+}
