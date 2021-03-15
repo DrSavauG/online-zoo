@@ -17,22 +17,22 @@
 
 <body>
     <div class="wrapper">
-        <!-- 1. Блок Header +10 -->
         <div class="head__all">
             <div class="head__content">
                 <header>
                     <!-- Блок Header содержит только логотип и панель навигации. -->
 
-                    <!-- Логотип содержит два элемента - svg-иконку и текст. -->
-                    <figure class="logo">
-                        <img src="./assets/antlers.svg" alt="deer antlers" width="70" height="60">
-                    </figure>
-                    <p class="logo_wildlife">Wildlife</p>
-                    <!-- На странице обязательно должен присутствовать один элемент <Н1> -->
+                    <div class="logotype">
+                        <!-- Логотип содержит два элемента - svg-иконку и текст. -->
+
+                            <img class="logo" src="./assets/antlers.svg" alt="deer antlers" width="70" height="60">
+                        <p class="logo_wildlife">Wildlife</p>
+                    </div>
+                    
                     <nav class="navigation">
-                        <!-- Панель навигации состоит из четырёх элементов: двух ссылок, иконки поиска и кнопки "Sign in" . -->
+                        <!-- Верстается в виде ненумерованного списка: ul > li > a. -->
                         <ul class="navigation__list">
-                            <!-- Верстается в виде ненумерованного списка: ul > li > a. -->
+                            <!-- Панель навигации состоит из четырёх элементов: двух ссылок, иконки поиска и кнопки "Sign in" . -->
                             <li><a class="navigation__text">Blog</a></li>
                             <li><a id="contacts" class="navigation__text">Contacts</a></li>
                             <li class="navigation__img"><a href="#"></a></li>
@@ -49,6 +49,7 @@
                 <aside class="survival">
                     <!-- У блоков Header и Survival общее фоновое изображение -->
                     <div class="survival__header">
+                        <!-- На странице обязательно должен присутствовать только один элемент <Н1> -->
                         <h1>Survival</h1>
                     </div>
                     <div class="survival__text">
@@ -92,9 +93,6 @@
                             </figure>
                             <div id="arrow_right" class="slider__arrow"></div>
                         </figure>
-
-                        <!-- Для вёрстки трёх изображений в ряд лучше использовать flexbox или grid. Float использовать можно. <table> - нельзя! -->
-                        <!-- Надписи поверх изображений можно разместить при помощи абсолютного позиционирования. Менее семантически правильный, но более простой в реализации вариант - использовать для добавления изображений css-свойство background-image. -->
                     </div>
 
                     <!-- 4. Блок Get notified +10 -->
@@ -110,22 +108,19 @@
                             <input class="button_submit" type="submit" value="Send"></input>
                         </form>
                     </div>
-
-
                 </div>
-
             </main>
         </div>
         <!-- 5. Блок Footer +10 -->
         <footer>
-<div class="foter-wrapper">
             <!-- Блок Footer содержит логотип, дополнительную панель навигации и ссылки на социальные сети -->
-            <figure class="logo">
+<div class="foter-wrapper">
+            <div class="logotype">
                 <!-- Логотип полностью повторяет логотип блока Header. Речь о визуальном сходстве, а не использовании точно таких же тегов -->
-                <img src="./assets/antlers.svg" alt="deer antlers" width="70" height="60">
+                <img class="logo"src="./assets/antlers.svg" alt="deer antlers" width="70" height="60">
                 
-            </figure>
-            <p class="logo_wildlife">WILDLIFE</p>
+                <p class="logo_wildlife">WILDLIFE</p>
+            </div>
 
 
             <nav class="footer__nav">
@@ -137,30 +132,15 @@
                 </ul>
 
             </nav>
-            <!-- виде ненумерованных списков: ul > li > a  -->
-            <!-- <div class="footer__social"> -->
             <ul class="footer__social">
+                <!-- виде ненумерованных списков: ul > li > a  -->
                 <!-- Иконки социальных сетей верстаются с использованием svg-файлов в качестве фоновых изображений -->
-                <!-- <ul class="footer__nav__icons"> -->
                     <li class="footer__icons__facebook"><a></a></li>
                     <li class="footer__icons__instagram"><a></a></li>
                     <li class="footer__icons__pinterest"><a></a></li>
                     <li class="footer__icons__youtube"><a href="#"></a></li>
                     <!-- В footer приложения замените иконку Telegram на иконку YouTube со ссылкой на видео. -->
                 </ul>
-                
-                
-                <!-- <li class="footer__logo__facebook"><a href="#"><img src="./assets/facebook.svg" width="40" height="40px"
-                            alt="facebook logo"></a></li>
-                <li class="footer__logo__instagram"><a href="#"><img src="./assets/instagram.svg" width="40"
-                            height="40px" alt="instagram logo"></a></li>
-                <li class="footer__logo__pinterest"><a href="#"><img src="./assets/pinterest.svg" width="40"
-                            height="40px" alt="pinterest logo"></a></li>
-                <li class="footer__logo___youtube"><a href="#"><img id="youtube_logo" src="./assets/youtube_green.svg" width="40" border-radius="50%"
-                            height="40px" alt="youtube logo"></a></li>
-            </ul> -->
-        <!-- </div> -->
-
             <!-- Все ссылки в футере должны быть интерактивными -->
         </div>
         </footer>
