@@ -81,8 +81,10 @@ ul,
 li {
     list-style-type: none;
     margin-left: 0;
+    margin-right: 0;
     /* Отступ слева в браузере IE и Opera */
     padding-left: 0;
+    padding-right: 0;
     /* Отступ слева в браузере Firefox, Safari, Chrome */
 
 }
@@ -103,9 +105,14 @@ li {
     padding-left: .1em;
 }
 
+/* <!-- интерактивны. --> */
+/* <!-- Все элементы панели навигации должны быть интерактивными --> */
+
+
 .navigation__text:hover {
     color: #CD6326;
     cursor: pointer;
+
     /* underline как-то некрасиво смотрится */
     /* text-decoration: underline; */
 }
@@ -251,6 +258,7 @@ main {
     width: 1440px;
     height: 1368px;
     margin: auto;
+    background: #CCCCCC;
 }
 
 .latest_articles {
@@ -309,7 +317,7 @@ sh2 {
     /*  */
     justify-content: space-between;
     /*  */
-    
+
 }
 
 figure button {
@@ -328,15 +336,23 @@ figure button {
     height: 70px;
     margin-top: auto;
     margin-bottom: auto;
+    transition: 0.3s linear;
+
 }
 
+/* <!-- Стрелки слайдера интерактивны. --> */
+
+.slider__arrow:hover {
+    background-image: url("./assets/arrow_left_orange.svg");
+    margin-top: 144px;
+}
 
 
 .animal-logo {
     width: 300px;
     height: 360px;
     margin: 0;
-    
+
 }
 
 #deer {
@@ -350,7 +366,9 @@ figure button {
 #bird {
     background-image: url("./assets/bird.jpg")
 }
-h4, .figure-caption-text{
+
+h4,
+.figure-caption-text {
     color: #F7F7F7;
     font-family: Open Sans;
     font-style: normal;
@@ -377,6 +395,234 @@ h4 {
 #arrow_right {
     /* transform: rotate(180deg);
      */
-     background-image: url("./assets/arrow-right.svg");
-     margin-top: 147px;
+    background-image: url("./assets/arrow-right.svg");
+    margin-top: 147px;
+}
+
+/* <!-- Стрелки слайдера интерактивны. --> */
+
+#arrow_right:hover {
+    background-image: url("./assets/arrow-right-orange.svg");
+    margin-top: 146px;
+
+}
+
+/* get_notified------------------------------------ */
+
+.get_notified {
+    margin: auto;
+    margin-top: 240px;
+    text-align: center;
+}
+
+h3 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+    color: #333333;
+}
+
+/* ...................form..................... */
+form {
+    margin-top: 59px;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 8px; */
+    margin-left: 389px;
+    margin-right: 389px;
+    /* margin-left:auto; */
+    /* margin-right:auto; */
+
+}
+
+.send_email {
+
+    width: 540px;
+    height: 58px;
+    opacity: 0.5;
+    border-radius: 2px 0 0 2px;
+    background-color: #CCCCCC;
+    font-size: 23px;
+    padding-left: 15px;
+    border: 1px solid #666666;
+    border-right: none;
+
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 27px;
+    color: #666666;
+    /* letter-spacing: 0.01px; */
+
+
+}
+
+
+
+.button_submit {
+    width: 124px;
+    height: 62px;
+    background: #CD6326;
+    border: 1px solid #CD6326;
+    border-radius: 0px 5px 5px 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    color: #F7F7F7;
+    transition: 0.3s linear;
+    padding-bottom: 0px;
+    padding-top: 2px;
+
+}
+
+.button_submit:hover {
+    background: #E39128;
+    cursor: pointer;
+    padding-top: 0px;
+}
+
+.button_submit:focus {
+    background: #8F5613;
+    cursor: pointer;
+}
+
+/* foooooooooter------------------------------- */
+
+
+footer {
+    margin-top: 0px;
+    height: 359px;
+    /* margin-left:50px; */
+    background: url("./assets/footer.jpg");
+}
+
+
+.foter-wrapper {
+    width: 1440px;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    margin-top: 150px;
+}
+
+footer .logo {
+    /* padding-top: 5px; */
+    /* width:240px; */
+}
+
+footer p {
+    margin: 0;
+    /* width: 80px; */
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    /* padding-bottom: 10px; */
+    text-align: center;
+    /* margin-bottom: 5px; */
+
+}
+
+.footer__nav {
+    width: 590px;
+    margin-left: 138px;
+    /* margin-right: 120px; */
+}
+
+.footer__nav__list {
+    width: 476px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    justify-content: space-between;
+}
+
+
+#li2 {
+    /* padding-left:2px */
+    margin-right: 2px;
+}
+
+.footer__a {
+    transition: 0.3s linear;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 60px;
+    color: #F7F7F7;
+    cursor: pointer;
+
+}
+.footer__a:hover{
+    color: #CD6326;
+}
+
+.footer__social {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    /* margin:0px; */
+    /* margin-left: 10px; */
+    margin: 0 0 0 10px;
+    justify-content: space-between;
+}
+
+.footer__social {
+    width: 240px;
+}
+.footer__social li{
+    width: 40px;
+    height: 40px;
+    /* background-image: url("../assets/icons/Telegram.svg"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+
+.footer__icons__facebook {
+    margin-top: 10px;
+    background-image: url(./assets/facebook.svg)
+}
+.footer__icons__facebook:hover {
+    margin-top: 9px;
+    background-image: url(./assets/facebook-orange.svg)
+}
+
+.footer__icons__instagram {
+    margin-top: 10px;
+    background-image: url(./assets/instagram.svg)
+}
+.footer__icons__instagram:hover {
+    margin-top: 9px;
+    background-image: url(./assets/instagram-orange.svg)
+}
+
+.footer__icons__pinterest {
+    margin-top: 10px;
+    background-image: url(./assets/pinterest.svg)
+}
+.footer__icons__pinterest:hover {
+    margin-top: 9px;
+    background-image: url(./assets/pinterest-orange.svg)
+}
+
+.footer__icons__youtube {
+    margin-top: 10px;
+border-radius: 50%;
+    background-image: url(./assets/youtube_green.svg)
+}
+.footer__icons__youtube:hover {
+    margin-top: 9px;
+border-radius: 50%;
+    background-image: url(./assets/youtube_green-orange.svg)
 }

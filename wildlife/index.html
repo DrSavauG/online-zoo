@@ -95,7 +95,6 @@
 
                         <!-- Для вёрстки трёх изображений в ряд лучше использовать flexbox или grid. Float использовать можно. <table> - нельзя! -->
                         <!-- Надписи поверх изображений можно разместить при помощи абсолютного позиционирования. Менее семантически правильный, но более простой в реализации вариант - использовать для добавления изображений css-свойство background-image. -->
-                        <!-- Стрелки слайдера интерактивны. -->
                     </div>
 
                     <!-- 4. Блок Get notified +10 -->
@@ -105,10 +104,10 @@
                         <form>
                             <!-- Поле email верстается тегом <input> с типом text или email (оба варианта допустимы),  -->
                             <!-- Надпись 'email' это placeholder. -->
-                            <input class="send_email" placeholder="Email" type="email" name=""></input>
+                            <input class="send_email" placeholder="Email" type="email"></input>
 
                             <!-- поле send верстается тегом <input> с типом submit -->
-                            <input class="submit" type="submit" value="Send"></input>
+                            <input class="button_submit" type="submit" value="Send"></input>
                         </form>
                     </div>
 
@@ -119,40 +118,51 @@
         </div>
         <!-- 5. Блок Footer +10 -->
         <footer>
+<div class="foter-wrapper">
             <!-- Блок Footer содержит логотип, дополнительную панель навигации и ссылки на социальные сети -->
-            <figure class="footer__logo">
+            <figure class="logo">
                 <!-- Логотип полностью повторяет логотип блока Header. Речь о визуальном сходстве, а не использовании точно таких же тегов -->
                 <img src="./assets/antlers.svg" alt="deer antlers" width="70" height="60">
-                <p class="logo_wildlife">WILDLIFE</p>
-
+                
             </figure>
+            <p class="logo_wildlife">WILDLIFE</p>
 
 
             <nav class="footer__nav">
                 <!-- Дополнительная панель навигации и ссылки на социальные сети верстаются в виде ненумерованных списков: ul > li > a -->
                 <ul class="footer__nav__list">
                     <li><a class="footer__a">Articles</a></li>
-                    <li><a class="footer__a">About us</a></li>
+                    <li id="li2"><a class="footer__a">About us</a></li>
                     <li><a class="footer__a">Learn more</a></li>
                 </ul>
 
             </nav>
             <!-- виде ненумерованных списков: ul > li > a  -->
+            <!-- <div class="footer__social"> -->
             <ul class="footer__social">
                 <!-- Иконки социальных сетей верстаются с использованием svg-файлов в качестве фоновых изображений -->
-                <li class="footer__logo__facebook"><a href="#"><img src="./assets/facebook.svg" width="40" height="40px"
+                <!-- <ul class="footer__nav__icons"> -->
+                    <li class="footer__icons__facebook"><a></a></li>
+                    <li class="footer__icons__instagram"><a></a></li>
+                    <li class="footer__icons__pinterest"><a></a></li>
+                    <li class="footer__icons__youtube"><a href="#"></a></li>
+                    <!-- В footer приложения замените иконку Telegram на иконку YouTube со ссылкой на видео. -->
+                </ul>
+                
+                
+                <!-- <li class="footer__logo__facebook"><a href="#"><img src="./assets/facebook.svg" width="40" height="40px"
                             alt="facebook logo"></a></li>
                 <li class="footer__logo__instagram"><a href="#"><img src="./assets/instagram.svg" width="40"
                             height="40px" alt="instagram logo"></a></li>
                 <li class="footer__logo__pinterest"><a href="#"><img src="./assets/pinterest.svg" width="40"
                             height="40px" alt="pinterest logo"></a></li>
-                <!-- В footer приложения замените иконку Telegram на иконку YouTube со ссылкой на видео. -->
-                <li class="footer__logo___youtube"><a href="#"><img src="./assets/youtube_green.svg" width="40"
+                <li class="footer__logo___youtube"><a href="#"><img id="youtube_logo" src="./assets/youtube_green.svg" width="40" border-radius="50%"
                             height="40px" alt="youtube logo"></a></li>
-            </ul>
-
+            </ul> -->
+        <!-- </div> -->
 
             <!-- Все ссылки в футере должны быть интерактивными -->
+        </div>
         </footer>
     </div>
 </body>
