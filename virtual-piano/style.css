@@ -94,7 +94,7 @@ body {
 	transition: 0.3s;
 	cursor: pointer;
 }
-.piano-key:hover {
+.piano-key:hover,.piano-key.hover  {
 	background-color: #fff;
 }
 .keys-sharp {
