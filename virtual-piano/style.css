@@ -118,6 +118,9 @@ body {
 	pointer-events: auto;
 	transform-origin: center top;
 }
+.piano-key-remove-mouse:active::before{
+	color: #a2abb3;
+}
 .piano-key.piano-key-active,
 .piano-key.sharp.piano-key-active {
 	transform: scale(0.96);
@@ -141,6 +144,8 @@ body {
 	bottom: -45px;
 	left: 20px;
 	transition: 0.3s;
+	pointer-events: none;
+
 }
 .piano-key::after {
 	display: none;

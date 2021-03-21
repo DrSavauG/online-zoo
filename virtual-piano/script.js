@@ -14,12 +14,13 @@ const notes = {
 }
 const piano = document.querySelector('.piano');
 
-// console.log(`piano =`, piano);
-// piano.addEventListener('click',(event)=>{
-//     if (event.target.classList.contains('piano-key')){
-//         playAudio('./assets/audio/a.mp3')
-//     }
-// });
+//#region Кнопка FullSCreen
+const fullScreen = document.querySelector('.fullScreen')|| document.querySelector('.openfullscreen');
+fullScreen.addEventListener('click', (e) => {
+  document.fullscreenElement? document.exitFullscreen():  document.documentElement.requestFullscreen() ;
+})
+//#endregion
+
 function playAudio(src) {
   const audio = new Audio();
   audio.src = src;
@@ -46,7 +47,7 @@ function playSoundKey(e) {
     audio.currentTime = 0;
     audio.play();
     key.classList.add('piano-key-active');
-    
+
     function removeTransition(e) {
       // if (e.propertyName !== 'transform') return; //временно убрал
       this.classList.remove('piano-key-active');
