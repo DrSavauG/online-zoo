@@ -36,24 +36,47 @@ piano.addEventListener('mousedown', (event) => {
   }
 });
 
-// || pfзапуск с клавиатуры
+  // ! c мышки пригажатии не происходи изменение цвета букв и нажатия клавиши
+
+  const keys = document.querySelectorAll('.piano-key');
+//#region запуск с клавиатуры
 
 function playSoundKey(e) {
   if (notes[event.code] !== undefined) {
     const key = document.querySelector(`.piano-key[data-letter="${event.code.slice(-1)}"]`);
-    const audio = new Audio();
-    if (!audio) return;
-    audio.src = `./assets/audio/${notes[event.code]}.mp3`
-    audio.currentTime = 0;
-    audio.play();
+    // const audio = new Audio();
+    // if (!audio) return;
+    const src = `./assets/audio/${notes[event.code]}.mp3`;
+    playAudio(src);
+
+    // audio.currentTime = 0;
+    // audio.play();
     key.classList.add('piano-key-active');
 
     function removeTransition(e) {
       // if (e.propertyName !== 'transform') return; //временно убрал
       this.classList.remove('piano-key-active');
     }
-    const keys = document.querySelectorAll('.piano-key');
     keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   }
 }
 window.addEventListener('keydown', playSoundKey);
+//#endregion
+
+//#region kнопки NOtes и Letters
+const notesButton = document.querySelector('.btn-notes');
+const lettersButton = document.querySelector('.btn-letters');
+
+notesButton.addEventListener('click',(e) =>{
+  lettersButton.classList.remove('btn-active');
+  notesButton.classList.add('btn-active');
+  keys.forEach(key => key.classList.remove('piano-key-letter'))
+});
+
+
+lettersButton.addEventListener('click',(e) =>{
+  lettersButton.classList.add('btn-active');
+  notesButton.classList.remove('btn-active');
+  keys.forEach(key => key.classList.add('piano-key-letter'))
+});
+//#endregion
