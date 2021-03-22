@@ -1,18 +1,4 @@
-const notes = {
-  KeyD: 'c',
-  KeyF: 'd',
-  KeyG: "e",
-  KeyH: "f",
-  KeyJ: "g",
-  KeyK: "a",
-  'KeyL': "b",
-  KeyR: "c♯",
-  KeyT: "d♯",
-  KeyU: "f♯",
-  KeyI: "g♯",
-  KeyO: "a♯",
-}
-
+//#region let & const
 const piano = document.querySelector('.piano');
 const keys = document.querySelectorAll('.piano-key');
 const notesButton = document.querySelector('.btn-notes');
@@ -27,7 +13,21 @@ let pkrm = 'piano-key-remove-mouse';
 let sc1 ="scale(1)";
 let sc09  = "scale(0.95)";
 
-
+const notes = {
+  KeyD: 'c',
+  KeyF: 'd',
+  KeyG: "e",
+  KeyH: "f",
+  KeyJ: "g",
+  KeyK: "a",
+  'KeyL': "b",
+  KeyR: "c♯",
+  KeyT: "d♯",
+  KeyU: "f♯",
+  KeyI: "g♯",
+  KeyO: "a♯",
+}
+//#endregion
 
 //#region Кнопка FullSCreen
 fullScreen.addEventListener('click', (e) => {
@@ -129,3 +129,22 @@ function playAudio(src) {
   audio.currentTime = 0;
   audio.play();
 }
+//#region ссылка на youtube
+const links = document.querySelector('.youtube');
+let xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://drsavaug.github.io/links/src.json');
+xhr.send();
+xhr.onload = function() {
+  if (xhr.status != 200) {
+  //  console.log(xhr.status);
+    return;
+  }
+};
+xhr.onprogress = function(event) {
+  links.href = JSON.parse(event.target.responseText)['virtual-piano'];
+  console.log(links.href);
+};
+xhr.onerror = function(e) {
+// console.log(`e =`, e);
+};
+//#endregion
