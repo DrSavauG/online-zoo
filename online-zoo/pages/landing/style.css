@@ -1,0 +1,145 @@
+.visually-hidden {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+    clip-path: inset(0px 0px 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
+}
+
+.body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*header*/
+.header-block {
+    width: 100vw;
+    height: 700px;
+    background: radial-gradient(71.89% 152.21% at 40.1% 50%,
+            #B5E6FF 0%,
+            #59C3FB 100%);
+    position: relative;
+}
+
+.header {
+    width: 1920px;
+    height: 80px;
+}
+.header__logo {
+    margin-left: 380px;
+    margin-top: 12px;
+}
+
+.header__navigation {
+    position: absolute;
+    width: 409px;
+    height: 21px;
+    left: 549px;
+    top: 30px;
+}
+.header__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0;
+}
+
+.header__links {
+    width: 49px;
+    height: 21px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+.header-block__panda {
+    position: absolute;
+    width: 693px;
+    height: 645px;
+    right: 361px;
+    top: 55px;
+    background: url(../../assets/images/panda\ 1.png);
+    background-position: center;
+}
+
+.header-block__online {
+    position: absolute;
+    width: 570px;
+    height: 252px;
+    left: 380px;
+    top: 210px;
+}
+
+.header-block__online-title {
+    font-family: 'SceneW01-Black';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 120%;
+    margin: 0;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+.header-block__vector{
+
+
+}
+
+.header-block__play {
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px 60px;
+
+    position: absolute;
+    width: 233px;
+    height: 51px;
+    left: 380px;
+    top: 512px;
+
+    background: #70CB0E;
+    border-radius: 30px;
+}
+
+.play__img {
+    position: static;
+    width: 17px;
+    height: 18px;
+    left: 18px;
+    top: 2px;
+    margin-right: 6px;
+}
+
+.play__text {
+    position: static;
+    width: 34px;
+    height: 21px;
+    left: 24px;
+    top: 0px;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+    margin: 0;
+}
