@@ -1,8 +1,15 @@
 .body {
-    margin: 0;
+    /* margin: 0; */
     display: flex;
     flex-direction: column;
 }
+
+
+ @font-face {
+    font-family: 'SceneW01-Black';
+    /* font-family: Pompadur; Имя шрифта */
+    src: url(../../assets/fonts/12309.ttf); /* Путь к файлу со шрифтом */
+   } 
 
 .visually-hidden {
     position: absolute;
@@ -117,7 +124,7 @@
 }
 
 .header-block__online-title {
-    font-family: 'SceneW01-Black';
+    font-family: 'SceneW01-Black', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 70px;
@@ -149,7 +156,7 @@ position: absolute;
 width: 1046.85px;
 height: 904.96px;
 left: 219.02px;
-top: -181px;
+top: -101px;
 
 }
 .drops2 {
@@ -498,10 +505,11 @@ transform: rotate(15deg); */
 .play__img {
     position: static;
     width: 17px;
-    height: 18px;
+    height: 15px;
     left: 18px;
-    top: 2px;
-    margin-right: 6px;
+    /* top: 2px; */
+    margin: 3px 4px 1px 1px;
+  
 }
 
 .play__text {
