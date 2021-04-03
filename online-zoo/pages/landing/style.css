@@ -99,9 +99,7 @@
     color: #000000;
 }
 
-.header-block__vector {
-
-}
+.header-block__vector {}
 
 .header-block__play {
     outline: none;
@@ -230,6 +228,7 @@
     margin: 0px;
 
 }
+
 /* ! добавить класс btn */
 .footer__btn-donate {
     width: 230px;
@@ -338,48 +337,67 @@
 
 
 /* main */
+.main{
+    width: 100vw;
+    /* height: 100vw; */
+}
+.testimonials__wrapper{
+    width: 1920px;
+    height: 797px;
+    margin: 0 auto;
+
+}
 
 /* Testimonials */
 .testimonials {
-    width: 1920px;
-    /* height: 797px; */
+    width: 1160px;
+    height: 797px;
     /* margin-top: 3341px; */
     margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
-.testimonials__title-h2{
-    margin: 100px auto 80px;
+.testimonials__title-h2 {
+    /* margin: 100px auto 80px; */
     /* position: absolute; */
     text-align: center;
-    justify-content:center;
+    justify-content: center;
     width: 231px;
     height: 47px;
-    left: calc(50% - 231px/2 + 0.5px);
-    top: 100px;
+    /* left: calc(50% - 231px/2 + 0.5px); */
     /* H2 */
-    
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
     line-height: 47px;
-    /* identical to box height */
-    
     text-align: center;
-    
-    /* Style_2 */
-    
     color: #000000;
-} 
+    
+    /*  */
+    /* top: 100px; */
+    /* padding-top: 100px; */
+    margin: 100px auto 80px;
+    
+}
 
-.testimonials__content{
+.testimonials__content {
     width: 1190px;
     height: 369px;
     margin: 0 auto;
+    display: flex;
+justify-content:space-between;
 
 }
+.testimonials__btn-feedback {
+    width: 246px;
+    height: 51px;
+    margin: 50px auto;
+}
 
-.btn{
+.btn {
     outline: none;
     border: none;
     display: flex;
@@ -390,8 +408,55 @@
     background: #70CB0E;
     border-radius: 30px;
 }
-.testimonials__btn-feedback{
-    width: 246px;
-    height: 51px;
-    margin: 50px auto;
+
+.pets-in-zoo__left-arrow{
+
+}
+.testimonials__ul{
+    display: flex;
+    /* ju */
+    margin:0;
+    padding:0;
+    list-style: none;
+    justify-content:space-between;
+
+
+}
+.pets-in-zoo__left-arrow{
+    align-self: center;
+    width: 63px;
+    height: 63px;
+    background: url(../../assets/icons/arrow-left.svg);
+}
+
+.pets-in-zoo__right-arrow{
+    align-self: center;
+    width: 63px;
+    height: 63px;
+    background: url(../../assets/icons/arrow-right.svg);
+}
+
+
+.testionals__elem{
+width: 233px;
+height:369px;
+background: #A7E1FF;
+}
+.testimonials__comment{
+    width: 193px;
+height: 209px;
+left: 20px;
+top: 92px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 120%;
+/* or 19px */
+
+
+/* Style_2 */
+
+color: #000000;
 }
