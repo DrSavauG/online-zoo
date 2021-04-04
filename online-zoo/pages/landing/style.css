@@ -413,20 +413,13 @@ transform: rotate(15deg); */
 
 
 .header-block__play {
-    outline: none;
-    border: none;
-    display: flex;
-    justify-content: center;
-    padding: 15px 60px;
-
+    flex-direction: row;
     position: absolute;
     width: 233px;
     height: 51px;
     left: 380px;
     top: 512px;
 
-    background: #70CB0E;
-    border-radius: 30px;
 }
 
 
@@ -759,17 +752,33 @@ transform: rotate(15deg); */
 }
 
 
-.pets-in-zoo__arrow {
+.pets-in-zoo__arrow-left {
     align-self: center;
     width: 63px;
     height: 63px;
     background: url(../../assets/icons/arrow-left.svg);
+    transition: 0.3s linear;
+}
+.pets-in-zoo__arrow-right {
+    align-self: center;
+    width: 63px;
+    height: 63px;
+    background: url(../../assets/icons/arrow-right.svg);
+    /* transform: rotate(-180deg); */
+
+    transition: 0.3s linear;
 }
 
-.arrow-right {
+/* .arrow-right {
     transform: rotate(-180deg);
     position: relative;
     bottom: 2px;
+} */
+
+.pets-in-zoo__arrow-left:hover,
+.pets-in-zoo__arrow-right:hover {
+
+transform:scale(1.2);
 }
 
 
