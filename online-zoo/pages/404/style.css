@@ -1,0 +1,13 @@
+.main-content{
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main-404{
+    align-self: center;
+    width: 675px;
+    height: 700px;
+    background: url(../../assets/images/404.svg);
+}
