@@ -1,0 +1,53 @@
+.main-wrapper {
+    width: 1920px;
+    height: 1550px;
+    margin: 0 auto;
+}
+
+.zoos__indent{
+    width:1920px;
+    height: 207px;
+
+
+    display: table-cell;
+vertical-align: middle;
+
+    /* vertical-align: middle; */
+    /* display: flex;
+    margin: 0 auto; */
+    /* text-align: justify; */
+    /* text-justify: auto; */
+    /* align: center; */
+    /* text-justify: inter-word; */
+}
+.main__content{
+    margin: 0 auto;
+    width: 1160px;
+    height: 1243px;
+
+}
+
+
+
+
+/* #region common styles */
+
+.main__title {
+    /* заголовок h2 типа alligator*/
+
+    margin: 0 auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+
+/* #endregion common styles */
+/* ------------- */

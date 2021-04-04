@@ -8,23 +8,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="../../style-common.css">
+    <link rel="stylesheet" href="../../../style-common.css">
 
     <title>.........................</title>
 </head>
 
 <body class="body">
+    <h1 name="PageUp" class="visually-hidden">Online Zoo</h1>
+
     <header class="header">
         <figure class="header__logo">
-            <img src="../../assets/icons/logo.svg" alt="">
+            <a href="../../index.html"> <img src="../../../assets/icons/logo.svg" alt=""></a>
         </figure>
         <nav class="header__navigation">
             <ul class="header__list">
-                <li><a class="header__links text-shadow" href="#">About</a></li>
-                <li><a class="header__links" href="#">Map</a></li>
-                <li><a class="header__links" href="#">Zoos</a></li>
-                <li><a class="header__links" href="#">Contact us</a></li>
-                <li><a class="header__links" href="#">Design</a></li>
+                <!-- class="header__links" href="../map/map.html">Map</a></li> -->
+                <li><a class="text-shadow" href="../../index.html">About</a></li>
+                <li><a class="header__links" href="../map/map.html">Map</a></li>
+                <li><a class="header__links" href="../alligator/alligator.html">Zoos</a></li>
+                <li><a class="header__links" href="../feedback/404.html">Contact us</a></li>
+                <li><a class="header__links" href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo?node-id=0%3A1">Design</a></li>
             </ul>
 
         </nav>
@@ -32,9 +35,8 @@
 
 
     <main class="">
-        <h1 class="visually-hidden">Online Zoo</h1>
 
-<!--  -->
+        <!--  -->
 
 
     </main>
@@ -52,34 +54,52 @@
 
                 <section class="footer__first-line">
                     <figure class="footer__logo">
-                        <img src="../../assets/icons/logo.svg" alt="" width="98px" height="50px">
+                        <a href="../../index.html" class="">
+                            <img src="../../../assets/icons/logo.svg" alt="" width="98px" height="50px">
+                        </a>
                     </figure>
                     <button class="btn footer__btn-donate">Donate for volunteers</button>
                     <nav class="footer__navigation">
 
                         <ul class="footer__nav-block">
-                            <li><a class="footer__links" href="#">About</a></li>
-                            <li><a class="footer__links" href="#">Map</a></li>
+                            <li><a class="footer__links" href="#PageUp">About</a></li>
+                            <li><a class="footer__links" href="../map/map.html">Map</a></li>
                         </ul>
                         <ul class="footer__nav-block">
-                            <li><a class="footer__links" href="#">Contact us</a></li>
+                            <li><a class="footer__links" href="../404/404.html">Contact us</a></li>
                             <li><a class="footer__links" href="#">Feedback</a></li>
                         </ul>
 
                     </nav>
 
                     <ul class="footer__social">
-                        <li class="footer__icons footer__instagram-icon"><a></a></li>
-                        <li class="footer__icons footer__facebook-icon"><a></a></li>
-                        <li class="footer__icons footer__twitter-icon"><a></a></li>
-                        <li class="footer__icons footer__youtube-icon"><a href="https://youtu.be/"></a></li>
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <img class="footer__icons" src="../../assets/icons/instagram.svg" alt="instagram logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <img class="footer__icons" src="../../assets/icons/facebook.svg" alt="facebook logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/">
+                                <img class="footer__icons" src="../../assets/icons/twitter.svg" alt="twitter logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/">
+                                <img class="footer__icons" src="../../assets/icons/youtube.svg" alt="youtube logo">
+                            </a>
+                        </li>
                     </ul>
 
                 </section>
                 <section class="footer__second-line">
                     <figure class="footer__school-logo">
-                        <img src="../../assets/icons/rs-school.svg" alt="rs school logo" width="141px" height="50px">
-                        <img src="../../assets/icons/yem-digital.svg" alt="yem-digital logo" width="97px" height="50px">
+                        <img title="Rolling Scopes School" src="../../../assets/icons/rs-school.svg" alt="rs school logo">
+                        <img title="Yem Digital" src="../../../assets/icons/yem-digital.svg" alt="yem-digital logo">
                     </figure>
                     <span class="footer__text to-left-text">Copyright ©RSSchool and ©Yem Digital 2020 - 2021</span>
                     <span class="footer__text">Grigoreva Margarita</span>
@@ -88,7 +108,7 @@
         </footer>
     </div>
     <script defer src="./script.js"></script>
-    <script defer src="../../script-common.js"></script>
+    <script defer src="../../../script-common.js"></script>
 </body>
 
 </html>
