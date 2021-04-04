@@ -2,6 +2,11 @@
     font-family: 'SceneW01-Black';
     src: url(./assets/fonts/12309.ttf);
 }
+.body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
 
 .visually-hidden {
     position: absolute;
@@ -15,15 +20,35 @@
     border: 0;
 }
 
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    /*  */
+    outline: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 30px 15px;
+    background: #70CB0E;
+    border-radius: 30px;
+}
+
 /*#region header*/
-.header-block {
+/* .header-block {
     min-width: 1920px;
     width: 100%;
     height: 700px;
     background: radial-gradient(71.89% 152.21% at 40.1% 50%,
             #B5E6FF 0%,
             #59C3FB 100%);
-}
+} */
 
 .header {
     width: 1920px;
@@ -87,12 +112,12 @@
 /*#region footer */
 
 .footer__wrapper {
+
+    min-width: 1920px;
+    width: 100%;
     height: 270px;
-    width: 1160px;
-    width: 100vw;
     left: 0px;
     right: 0px;
-    /* bottom: 0px; */
     /* ! не удалять !  */
     background-color: #DFF5B0;
 }
@@ -115,7 +140,7 @@
     right: -0.09%;
     top: -7%;
     bottom: -15.27%;
-    background-image: url(../../assets/icons/footer-vect-big.svg);
+    background-image: url(./assets/icons/footer-vect-big.svg);
 }
 
 .footer__vector-small {
@@ -127,7 +152,7 @@
     top: 1.76%;
     bottom: 89.58%;
     transform: matrix(1, -0.03, 0.04, 1, 0, 0);
-    background-image: url(../../assets/icons/footer-vect-small.svg);
+    background-image: url(./assets/icons/footer-vect-small.svg);
 
 }
 
@@ -211,19 +236,19 @@
 }
 
 .footer__instagram-icon {
-    background-image: url(../../assets/icons/instagram.svg)
+    background-image: url(./assets/icons/instagram.svg)
 }
 
 .footer__facebook-icon {
-    background-image: url(../../assets/icons/facebook.svg)
+    background-image: url(./assets/icons/facebook.svg)
 }
 
 .footer__twitter-icon {
-    background-image: url(../../assets/icons/twitter.svg)
+    background-image: url(./assets/icons/twitter.svg)
 }
 
 .footer__youtube-icon {
-    background-image: url(../../assets/icons/youtube.svg)
+    background-image: url(./assets/icons/youtube.svg)
 }
 
 .footer__second-line {
