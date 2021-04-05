@@ -670,6 +670,8 @@ transform: rotate(15deg); */
     margin-bottom: 30px;
     position: relative;
     background-size: 100%;
+    transition: 0.3s linear;
+
 
 }
 
@@ -685,6 +687,12 @@ transform: rotate(15deg); */
     width: 233px;
     height: 300px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.3s linear;
+
+}
+
+a {
+    text-decoration: none;
 }
 
 .pets-in-zoo__img-end-down {
@@ -692,6 +700,8 @@ transform: rotate(15deg); */
     width: 233px;
     height: 300px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.3s linear;
+
 }
 
 
@@ -716,9 +726,21 @@ transform: rotate(15deg); */
 
 }
 
+.pets-in-zoo__panda:hover {
+    transform: scale(1.09);
+}
+
+.pets-in-zoo__aligator:hover {
+    transform: scale(1.09);
+}
+
 .pets-in-zoo__aligator {
     background: url(../../assets/images/aligator.png);
 
+}
+
+.pets-in-zoo__gorilla:hover {
+    transform: scale(1.09);
 }
 
 .pets-in-zoo__gorilla {
@@ -726,9 +748,17 @@ transform: rotate(15deg); */
 
 }
 
+.pets-in-zoo__elephant:hover {
+    transform: scale(1.09);
+}
+
 .pets-in-zoo__elephant {
     background: url(../../assets/images/elephant.png);
 
+}
+
+.pets-in-zoo__polar-bear:hover {
+    transform: scale(1.09);
 }
 
 .pets-in-zoo__polar-bear {
@@ -736,14 +766,25 @@ transform: rotate(15deg); */
 
 }
 
+.pets-in-zoo__eagle:hover {
+    transform: scale(1.09);
+}
+
 .pets-in-zoo__eagle {
     background: url(../../assets/images/eagle.png);
+}
 
+.pets-in-zoo__owl:hover {
+    transform: scale(1.09);
 }
 
 .pets-in-zoo__owl {
     background: url(../../assets/images/owl.png);
 
+}
+
+.pets-in-zoo__penguin:hover {
+    transform: scale(1.09);
 }
 
 .pets-in-zoo__penguin {
@@ -759,6 +800,7 @@ transform: rotate(15deg); */
     background: url(../../assets/icons/arrow-left.svg);
     transition: 0.3s linear;
 }
+
 .pets-in-zoo__arrow-right {
     align-self: center;
     width: 63px;
@@ -778,7 +820,7 @@ transform: rotate(15deg); */
 .pets-in-zoo__arrow-left:hover,
 .pets-in-zoo__arrow-right:hover {
 
-transform:scale(1.2);
+    transform: scale(1.2);
 }
 
 

@@ -33,7 +33,16 @@
 .main-404__link{
     text-decoration: none;
 }
+.main-404__p:hover{
+    color: #1aacfa;
+    text-shadow: #005f92 1px 1px 0;
+    
+    transform: scale(1.05);
+
+}
 .main-404__p {
+    
+transition: 0.3s linear;
     font-family: Bebas Neue;
     font-style: normal;
     font-weight: bold;
@@ -41,8 +50,6 @@
     line-height: 20px;
     text-align: center;
     color: #59C3FB;
-
     margin: 18px auto 0;
-   
 
 }
