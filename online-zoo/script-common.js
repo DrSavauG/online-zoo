@@ -40,3 +40,20 @@ function addClickEvent(text, block, arrow) {
 for (let i = 0; i < arrow.length; i++) {
     addClickEvent(text[i], block[i], arrow[i]);
 }
+
+
+////////////////////////////
+
+const links = document.querySelector('.youtube');
+let xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://drsavaug.github.io/links/src.json');
+xhr.send();
+xhr.onload = function() {
+  if (xhr.status != 200) {
+    return;
+  }
+};
+xhr.onprogress = function(event) {
+  links.href = JSON.parse(event.target.responseText)['online-zoo'];
+  console.log(links.href);
+};
