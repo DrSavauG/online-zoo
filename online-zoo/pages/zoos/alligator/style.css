@@ -1,0 +1,277 @@
+.main-wrapper {
+    width: 1920px;
+    height: 1550px;
+    margin: 0 auto;
+}
+
+.zoos__indent {
+    width: 1920px;
+    height: 207px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main__content {
+    margin: 0 auto;
+    width: 1160px;
+    height: 1243px;
+
+}
+
+/* #region main__center */
+.main__center {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.main__video-big {}
+
+.main__videos-small {
+    display: flex;
+    margin: 20px 0 0 0;
+    justify-content: space-between;
+
+}
+
+.main__description-wrapper {
+    width: 1160px;
+    /* height: 61px; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* background: #A7E1FF; */
+}
+
+.plugin {
+    width: 20px;
+    height: 61;
+    margin: 20px 0 0 0;
+    background: #A7E1FF;
+
+
+}
+
+.main__description {
+    display: table-cell;
+    vertical-align: middle;
+    width: 580px;
+    margin: 0;
+
+}
+
+.to-upper-case {
+    text-transform: uppercase;
+    /* padding-top: */
+}
+
+.main__description-title {
+    margin: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.main__description-text {
+    margin: 20px;
+
+    /*  
+    padding-left:20px;
+    padding-top: 20px; */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* display: flex; */
+}
+
+.description-block {
+
+    margin: 20px 0 0 0;
+    background: #A7E1FF;
+    width: 570px;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description-block__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.description-block__arrow {
+    padding-right: 20px;
+    position: relative;
+    top: 8px;
+    width: 45px;
+    height: 45px;
+    transition: 0.3s linear;
+}
+
+.description-block-right {
+    background: #A7E1FF;
+
+
+}
+
+.description-block__box {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* #endregion main__center */
+
+/* #region toolbar */
+
+.toolbar {
+    z-index: 1;
+    display: flex;
+    height: 380px;
+    width: 111px;
+    position: fixed;
+    top: 287px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    background: url(../../../assets/icons/toolbar_bg.svg);
+}
+
+.toolbar__pictures {
+    height: 354px;
+    width: 64px;
+    align-self: center;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toolbar__el {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow:0px 0px 0px 2px white inset;
+
+}
+
+.selected{
+    box-shadow:0px 0px 0px 4px #70CB0E inset;
+}
+
+
+.toolbar__gorilla {
+    background: url(../../../assets/icons/toolbar__gorilla.png);
+}
+
+.toolbar__alligator {
+    background: url(../../../assets/icons/toolbar__alligator.png);
+}
+
+
+.toolbar__eagle {
+    background: url(../../../assets/icons/toolbar__eagle.png);
+}
+
+.toolbar__panda {
+    background: url(../../../assets/icons/toolbar__panda.png);
+}
+
+.toolbar__circle-svg {
+    display: flex;
+    justify-content: center;
+     background-color: #70CB0E;
+}
+
+.toolbar__panda-svg {
+    margin: 0;
+    align-self: center;
+}
+
+/*#region tooltip*/
+
+
+
+.tooltip__text {
+    text-align: center;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+}
+
+
+.tooltip {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 102px;
+    background-color: #70CB0E;
+    padding: 6px 4px 6px 4px;
+    color: black;
+    /* красивее смотрится когда скруглены углы */
+    border-radius: 2px;
+    left: 84%;
+    opacity: 0;
+    transition: 0.3s linear;
+    transition: opacity 0.5s;
+    visibility: hidden;
+    /* сместить */
+    transform:   translateY(15%);
+    
+}
+
+.tooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%; 
+    margin-top: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent #70CB0E transparent transparent;
+}
+.selected .tooltip,
+.toolbar__el:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/*#endregion tooltip*/
+
+/* #endregion toolbar */
+
+
+
+/* #region common styles */
+
+.main__title {
+    /* заголовок h2 типа alligator*/
+
+    margin: 0 auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #000000;
+}
+
+
+/* #endregion common styles */
+/* ------------- */
