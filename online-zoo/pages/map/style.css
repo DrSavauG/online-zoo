@@ -290,13 +290,14 @@ a {
     height: 945px;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .map__content {
     width: 1160px;
     height: 745px;
     align-self: center;
-    margin: 0;
+    margin: 0 auto;
     position: relative;
 }
 
