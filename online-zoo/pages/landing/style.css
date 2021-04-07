@@ -29,7 +29,7 @@
 
 .header-block__panda {
     /* position: relative; */
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     width: 693px;
     height: 645px;
@@ -70,15 +70,16 @@
 }
 
 .vector1 {
+    z-index: 3;
     position: absolute;
     width: 833.74px;
     height: 763.79px;
     left: 804px;
-    top: -28px;
+    top: -32px;
 }
 
 .vector2 {
-    /* z-index: 0; */
+    z-index: 1;
     position: absolute;
     width: 1046.85px;
     height: 904.96px;
@@ -665,7 +666,7 @@ transform: rotate(15deg); */
 .pets-in-zoo__img {
     width: 233px;
     height: 300px;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); */
     margin-right: 20px;
     margin-bottom: 30px;
     position: relative;
@@ -686,7 +687,6 @@ transform: rotate(15deg); */
     margin-bottom: 30px;
     width: 233px;
     height: 300px;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: 0.3s linear;
 
 }
@@ -699,7 +699,6 @@ a {
     position: relative;
     width: 233px;
     height: 300px;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     transition: 0.3s linear;
 
 }
