@@ -49,6 +49,9 @@
 }
 
 .header-block__online-title {
+    /* position: relative;
+    z-index: 5; */
+    /*! название в сафари накрвывает */
     font-family: 'SceneW01-Black', sans-serif;
     font-style: normal;
     font-weight: 900;
@@ -79,7 +82,7 @@
 }
 
 .vector2 {
-    z-index: 1;
+    z-index: 0;
     position: absolute;
     width: 1046.85px;
     height: 904.96px;
@@ -794,16 +797,16 @@ a {
 
 .pets-in-zoo__arrow-left {
     align-self: center;
-    width: 63px;
-    height: 63px;
+    width: 64px;
+    height: 64px;
     background: url(../../assets/icons/arrow-left.svg);
     transition: 0.3s linear;
 }
 
 .pets-in-zoo__arrow-right {
     align-self: center;
-    width: 63px;
-    height: 63px;
+    width: 64px;
+    height: 64px;
     background: url(../../assets/icons/arrow-right.svg);
     /* transform: rotate(-180deg); */
 
