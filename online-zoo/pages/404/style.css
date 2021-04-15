@@ -35,7 +35,7 @@
 }
 .main-404__p:hover{
     color: #1aacfa;
-    text-shadow: #005f92 1px 1px 0;
+    /* text-shadow: #005f92 1px 1px 0; */
     
     transform: scale(1.05);
 
