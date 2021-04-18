@@ -53,3 +53,9 @@ transition: 0.3s linear;
     margin: 18px auto 0;
 
 }
+@media all and (max-width:1200px){
+    .main-404__p {
+        margin: 13px auto 0;
+
+    }
+}
