@@ -129,7 +129,7 @@
 /* #region toolbar */
 
 .toolbar {
-    z-index: 1;
+    z-index: 4;
     display: flex;
     height: 380px;
     width: 111px;
@@ -139,6 +139,11 @@
     justify-content: center;
     align-items: center;
     background: url(../../../assets/icons/toolbar_bg.svg);
+}
+
+.toolbar__arrow{
+    position: absolute;
+visibility: hidden;
 }
 
 .toolbar__pictures {
@@ -404,3 +409,41 @@
 }
 
 /* #endregion main__description */
+
+
+@media all and (max-width: 1200px) {
+    .main-wrapper{
+        width: 1200px;
+    }
+.toolbar{
+    position: absolute;
+width: 111px;
+height: 380px;
+left: -242px;
+top: 330px;
+transition: 0.5s all;
+}
+.toolbar--clicked{
+left: 0px;
+
+}
+
+.toolbar__arrow{
+    visibility:visible;
+    position: absolute;
+width: 45px;
+height: 45px;
+left: 20px;
+top: 287px;
+transform: rotate(180deg);
+transition: 0.3s all;
+}
+.toolbar__arrow:hover{
+  
+    transform: rotate(270deg);
+}
+.toolbar__arrow--clicked{
+    transform: rotate(360deg);
+}
+
+}
