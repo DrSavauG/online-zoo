@@ -59,7 +59,7 @@
 
 }
 
-btn:active {
+.btn:active {
     box-shadow: inset 0 0 5px rgba(0, 0, 0, .5);
     background: #8F5613;
     border: 2px solid #8F5613;
@@ -87,11 +87,11 @@ btn:active {
 
 .header__logo {
     z-index: 2;
-    position: absolute;
+    /* position: absolute; */
     width: 112px;
     height: 57px;
-    left: 380px;
-    top: 0px;
+    /* left: 380px; */
+    /* top: 0px; */
     border-radius: 3px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -99,11 +99,12 @@ btn:active {
 }
 
 .header__navigation {
-    position: absolute;
+    /* position: absolute; */
     width: 409px;
     height: 21px;
-    left: 549px;
-    top: 30px;
+    margin: auto 0;
+    /* left: 549px; */
+    /* top: 30px; */
 }
 
 .header__list {

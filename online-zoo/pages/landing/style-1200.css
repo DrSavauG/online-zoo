@@ -1,0 +1,144 @@
+@media all and (max-width: 1200px) {
+    .header-block {
+        min-width: 1200px;
+        width: 100%;
+        height: 700px;
+        background: radial-gradient(71.89% 152.21% at 40.1% 50%,
+                #B5E6FF 0%, #59C3FB 100%);
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .header-block__content {
+       margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .header__content {
+        margin-left: 20px;
+    }
+
+    .header-block__panda {
+        right: -10px;
+    }
+
+    .header-block__online {
+        left: 20px;
+        z-index: 2;
+    }
+
+    .header-block__play {
+        left: 20px;
+    }
+
+    .header-block__drops1 {
+        width: 1046.85px;
+        height: 904.96px;
+        left: 0px;
+        top: 0px;
+        background: url(../../assets/icons/drops1-1200.svg);
+    }
+
+    .header-block__drops2 {
+        z-index: 4;
+        overflow: hidden;
+        width: 833.74px;
+        height: 763.79px;
+        left: 446px;
+        top: 0px;
+        background: url(../../assets/icons/drops2-1200.svg);
+    }
+/* 
+    .header-block__figure {
+        overflow: hidden;
+    } */
+
+    /*How it works*/
+
+    .how-it-works {
+        min-width: 1200px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .how-it-works__content {
+        width: 1170px;
+    }
+
+    .how-it-works__ul {
+        width: 1170px;
+    }
+
+    .how-it-works__li-left {
+        margin-right: -71px;
+    }
+
+    .how-it-works__li-2 {
+        margin-right: -71px;
+    }
+
+    .how-it-works__li-4 {
+        margin-left: -71px;
+    }
+
+    .how-it-works__li-right {
+        margin-left: -71px;
+    }
+
+
+    /*Pets in zoo*/
+
+    .pets-in-zoo {
+        min-width: 1200px;
+        width: 100%;
+    }
+
+
+    /*Pay and feed*/
+
+    .pay-and-feed {
+        min-width: 1200px;
+        width: 100%;
+    }
+
+    .pay-and-feed__arrow-dotted {
+        left: 370px;
+    }
+
+    .pay-and-feed__arrowhead {
+        left: 557px;
+    }
+
+    .pay-and-feed__arrowhead-up{
+        left: 877px;
+    }
+
+
+    /*Testimonials*/
+
+    .testimonials__wrapper {
+        min-width: 1200px;
+        width: 100%;
+    }
+
+    /*Footer*/
+
+    .footer__wrapper {
+        min-width: 1200px;
+        width: 100%;
+    }
+
+    .footer {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .footer__vector {
+        background-image: url(../../assets/icons/footer-vector-1200.svg);
+    }
+
+}
