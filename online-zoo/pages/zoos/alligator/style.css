@@ -421,10 +421,13 @@ width: 111px;
 height: 380px;
 left: -242px;
 top: 330px;
+position: fixed;
+
 transition: 0.5s all;
 }
 .toolbar--clicked{
 left: 0px;
+position: fixed;
 
 }
 
@@ -437,6 +440,8 @@ left: 20px;
 top: 287px;
 transform: rotate(180deg);
 transition: 0.5s all;
+position: fixed;
+
 /* transition: 0.4 linear; */
 /* transition: opacity 0.5s; */
 }
