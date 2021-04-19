@@ -1783,6 +1783,89 @@ display: column; */
 
     /*#endregion Pay and feed*/
 
+    /*#region Testimonials*/
+
+    .testimonials__wrapper {
+        min-width: 320px;
+        width: 100%;
+        height: 1057px;
+    }
+
+    .testimonials {
+        width: 300px;
+        height: 1057px;
+        overflow: hidden;
+    }
+
+    .testimonials__content {
+        position: relative;
+        height: 535px;
+        width: 100%;
+        flex-direction: column;
+    }
+.testimonials__ul{
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 535px;
+}
+    .testimonials__elem--1{
+        width: 300px;
+        height: 286px;
+    }
+
+    .testimonials__elem--2 {
+        width: 300px;
+        height: 229px;
+    }
+
+    .testimonials__elem--3 {
+        display: none;
+    }
+
+    .testimonials__elem-title {
+        width: 138px;
+        height: 38px;
+        justify-content: start;
+        align-self: baseline;
+    }
+
+    .testimonials__comment--1-text{
+        width: 260px;
+        height: 171px;
+        margin-bottom: 20px;
+    }
+
+    .testimonials__comment--2-text {
+        width: 260px;
+        height: 114px;
+        margin-bottom: 20px;
+    }
+
+    .testimonials__arrow-left {
+        position: absolute;
+        left: 77px;
+        top: 565px;
+    }
+
+    .testimonials__arrow-right {
+        position: absolute;
+        left: 160px;
+        top: 565px;
+    }
+    .testimonials__btn-feedback {
+        position: relative;
+        width: 226px;
+        height: 51px;
+        top: 95px;
+    }
+
+    /* .testimonials__comment{
+
+    } */
+    /*#endregion Testimonials*/
+
+
 }
 
 /* #endregion index-320px */
