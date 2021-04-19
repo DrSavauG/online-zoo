@@ -1,4 +1,3 @@
-
 .main-block {
     min-width: 1920px;
     height: 1025px;
@@ -25,258 +24,268 @@ a {
 
 /* #region toolbar */
 
-.alligator-text-xy{
+.alligator-text-xy {
 
     position: absolute;
     width: 49px;
     height: 19px;
     left: 70px;
     top: 23px;
-    
-    }
-    
-    
-    
-    .to-upper-case {
-        font-family: Roboto;
+
+}
+
+
+
+.to-upper-case {
+    font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     /* identical to box height */
-    
+
     text-align: center;
     text-transform: uppercase;
-    
-        /* padding-top: */
-    }
-    
-    .toolbar {
-        z-index: 1;
-        display: flex;
-        height: 380px;
-        width: 111px;
-        position: fixed;
-        top: 287px;
-        left: 0px;
-        justify-content: center;
-        align-items: center;
-        background: url(../../../assets/icons/toolbar_bg.svg);
-    }
-    
-    .toolbar__pictures {
-        height: 354px;
-        width: 64px;
-        align-self: center;
-        margin-right: 8px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .toolbar__el {
-        width: 64px;
-        height: 64px;
-        cursor: pointer;
-        border-radius: 50%;
-        box-shadow: 0px 0px 0px 2px white inset;
-    
-    }
-    
-    .toolbar__el:hover .tooltip__before {
-        visibility: hidden;
-    
-    }
-    
-    
-    .toolbar__el:hover {
-        box-shadow: 0px 0px 0px 4px #70CB0E inset;
-    
-    }
-    
-    
-    .selected {
-        box-shadow: 0px 0px 0px 4px #70CB0E inset;
-    }
-    
-    
-    .toolbar__gorilla {
-        background: url(../../assets/icons/toolbar__gorilla.png);
-    
+
+    /* padding-top: */
+}
+
+.toolbar {
+    z-index: 1;
+    display: flex;
+    height: 380px;
+    width: 111px;
+    position: fixed;
+    top: 287px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    background: url(../../../assets/icons/toolbar_bg.svg);
+}
+
+.toolbar__pictures {
+    height: 354px;
+    width: 64px;
+    align-self: center;
+    margin-right: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.toolbar__el {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 2px white inset;
+
+}
+
+.toolbar__el:hover .tooltip__before {
+    visibility: hidden;
+
+}
+
+
+.toolbar__el:hover {
+    box-shadow: 0px 0px 0px 4px #70CB0E inset;
+
+}
+
+
+.selected {
+    box-shadow: 0px 0px 0px 4px #70CB0E inset;
+}
+
+
+.toolbar__gorilla {
+    background: url(../../assets/icons/toolbar__gorilla.png);
+
     position: absolute;
     /* width: 136px; */
     /* height: 64px; */
     left: calc(50% - 136px/2 + 143px);
     top: calc(50% - 64px/2 + 164.5px);
-    }
-    .gorilla-text-xy{
-        position: absolute;
+}
+
+.gorilla-text-xy {
+    position: absolute;
     /* width: 64px;
     height: 19px; */
     left: 72px;
     top: 22px;
-    
-    }
-    .gorilla-text-xy-2{
-        position: absolute;
-        /* width: 61px;
-        height: 42px; */
-        left: calc(50% - 61px/2 - 38.5px);
-        top: calc(50% - 42px/2 + 171.5px);
-    }
-    
-    .toolbar__alligator {
-        background: url(../../assets/icons/toolbar__alligator.png)no-repeat;
-        position: absolute;
-        /* width: 148px; */
-        /* height: 60px; */
-        left: calc(50% - 158px/2 - 199.5px);
-        top: calc(50% - 30px/2 + 50px - 3px);
-        display: flex;
-        justify-content: space-between;
-    }
-    .eagle-text-xy{
+
+}
+
+.gorilla-text-xy-2 {
     position: absolute;
-    
-        width: 49px;
+    /* width: 61px;
+        height: 42px; */
+    left: calc(50% - 61px/2 - 38.5px);
+    top: calc(50% - 42px/2 + 171.5px);
+}
+
+.toolbar__alligator {
+    background: url(../../assets/icons/toolbar__alligator.png)no-repeat;
+    position: absolute;
+    /* width: 148px; */
+    /* height: 60px; */
+    left: calc(50% - 158px/2 - 199.5px);
+    top: calc(50% - 30px/2 + 50px - 3px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.eagle-text-xy {
+    position: absolute;
+
+    width: 49px;
     height: 19px;
     left: -58px;
     top: 23px;
-    }
-    
-    .toolbar__eagle {
-        background: url(../../assets/icons/toolbar__eagle.png);
-    
+}
+
+.toolbar__eagle {
+    background: url(../../assets/icons/toolbar__eagle.png);
+
     position: absolute;
     /* width: 121px;
     height: 64px; */
-    left: 457px;
+    /* left: 457px; */
+    left: calc(50% - 64px/2 - 471px);
     top: calc(50% - 64px/2 + 55.5px);
+    /* top: calc(50% - 64px/2 + 55.5px); */
     /* right: 165px; */
-    
-    }
-    .usa-xy{
-        position: absolute;
+
+}
+
+.usa-xy {
+    position: absolute;
     width: 31px;
     height: 19px;
     left: calc(50% - 31px/2 - 363.5px);
     top: calc(50% - 19px/2 + 14px);
-    
-    }
-    .eastern-drc-xy{
-        position: absolute;
+
+}
+
+.eastern-drc-xy {
+    position: absolute;
     width: 61px;
     height: 42px;
     left: calc(50% - 61px/2 - 38.5px);
     top: calc(50% - 42px/2 + 171.5px);
-    }
-    .china-xy{
-        position: absolute;
-        width: 41px;
-        height: 19px;
-        left: calc(50% - 41px/2 + 273.5px);
-        top: calc(50% - 19px/2 + 28px);
-    }
-    .panda-text-xy{
-    
-        position: absolute;
+}
+
+.china-xy {
+    position: absolute;
+    width: 41px;
+    height: 19px;
+    left: calc(50% - 41px/2 + 273.5px);
+    top: calc(50% - 19px/2 + 28px);
+}
+
+.panda-text-xy {
+
+    position: absolute;
     width: 52px;
     height: 38px;
     left: 72px;
     top: 13px;
-    }
-    .toolbar__panda {
-        background: url(../../assets/icons/toolbar__panda.png);
-        position: absolute;
-        /* width: 124px; */
-        /* height: 64px; */
-        left: calc(50% - 124px/2 + 404px);
-        top: calc(50% - 64px/2 + 68.5px);
-    
-    }
-    
-    .toolbar__circle-svg {
-        display: flex;
-        justify-content: center;
-        background-color: #70CB0E;
-    }
-    
-    .toolbar__panda-svg {
-        margin: 0;
-        align-self: center;
-    }
-    
-    /*#region tooltip*/
-    
-    
-    
-    .tooltip__text {
-        text-align: center;
-        align-self: center;
-        font-family: 'Roboto', sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 19px;
-        margin: 0;
-    }
-    
-    
-    .tooltip {
-        z-index: 1;
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        /* width: 102px; */
-        width: 94px;
-        /* height: 48px; */
-        background-color: #70CB0E;
-        padding: 6px 4px 6px 4px;
-        color: black;
-        /* красивее смотрится когда скруглены углы */
-        border-radius: 2px;
-        left: 110%;
-        opacity: 0;
-        transition: 0.3s linear;
-        transition: opacity 0.5s;
-        visibility: hidden;
-        /* сместить */
-        transform: translateY(15%);
-    
-    }
-    
-    
-    .tooltip__before {
-        visibility: visible;
-    
-    }
-    
-    
-    
-    .tooltip::after {
-        content: " ";
-        position: absolute;
-        top: 50%;
-        right: 100%;
-        margin-top: -7px;
-        border-width: 7px;
-        border-style: solid;
-        border-color: transparent #70CB0E transparent transparent;
-    }
-    
-    .selected .tooltip,
-    .toolbar__el:hover .tooltip {
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    
-    
-    /*#endregion tooltip*/
-    
-    /* #endregion toolbar */
-    
-    
+}
+
+.toolbar__panda {
+    background: url(../../assets/icons/toolbar__panda.png);
+    position: absolute;
+    /* width: 124px; */
+    /* height: 64px; */
+    left: calc(50% - 64px/2 + 374px);
+    top: calc(50% - 64px/2 + 68.5px);
+
+}
+
+.toolbar__circle-svg {
+    display: flex;
+    justify-content: center;
+    background-color: #70CB0E;
+}
+
+.toolbar__panda-svg {
+    margin: 0;
+    align-self: center;
+}
+
+/*#region tooltip*/
+
+
+
+.tooltip__text {
+    text-align: center;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+}
+
+
+.tooltip {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    /* width: 102px; */
+    width: 94px;
+    /* height: 48px; */
+    background-color: #70CB0E;
+    padding: 6px 4px 6px 4px;
+    color: black;
+    /* красивее смотрится когда скруглены углы */
+    border-radius: 2px;
+    left: 110%;
+    opacity: 0;
+    transition: 0.3s linear;
+    transition: opacity 0.5s;
+    visibility: hidden;
+    /* сместить */
+    transform: translateY(15%);
+
+}
+
+
+.tooltip__before {
+    visibility: visible;
+
+}
+
+
+
+.tooltip::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent #70CB0E transparent transparent;
+}
+
+.selected .tooltip,
+.toolbar__el:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+/*#endregion tooltip*/
+
+/* #endregion toolbar */
+
+
 .main-block__header {
     width: 1920px;
     height: 80px;
@@ -304,6 +313,7 @@ a {
 .map__world {
     width: 1160px;
     height: 745px;
+    background-image: url(../../assets/images/map.svg);
 }
 
 
@@ -356,3 +366,33 @@ a {
     bottom: 25%;
 }
 
+@media all and (max-width: 1200px) {
+    .main-block {
+        min-width: 1200px;
+    }
+
+    .main-block__map {
+        width: 1200px;
+    }
+
+    .toolbar__eagle {
+        left: calc(50% - 64px/2 - 474px);
+        top: calc(50% - 64px/2 + 52.5px);
+    }
+
+    .toolbar__alligator {
+        left: calc(50% - 64px/2 - 248px);
+        top: calc(50% - 64px/2 + 61.5px);
+    }
+
+    .eastern-drc-xy {
+        left: calc(50% - 61px/2 - 38.5px);
+        top: calc(50% - 42px/2 + 171.5px);
+    }
+
+    .toolbar__panda {
+        left: calc(50% - 64px/2 + 374px);
+        top: calc(50% - 64px/2 + 62.5px);
+    }
+
+}

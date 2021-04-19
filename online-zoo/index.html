@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style-common.css">
     <link rel="stylesheet" href="./pages/landing/style.css">
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/x-icon">
     <title>Online Zoo</title>
 </head>
 
@@ -18,30 +19,33 @@
     <div class="header-block">
         <div class="header-block__content">
             <header class="header">
-                <figure name="PageUp" class="header__logo">
-                    <a href="./index.html"> <img src="./assets/icons/logo.svg" alt=""></a>
-                </figure>
-                <nav class="header__navigation">
-                    <ul class="header__list">
-                        <li><a class="text-shadow" href="#">About</a></li>
-                        <li><a class="header__links" href="./pages/map/map.html">Map</a></li>
-                        <li><a class="header__links" href="./pages/zoos/panda/panda.html">Zoos</a></li>
-                        <li><a class="header__links" href="./pages/404/404.html">Contact us</a></li>
-                        <li><a class="header__links"
-                                href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo?node-id=0%3A1">Design</a>
-                        </li>
-                    </ul>
+                <div class="header__content">
+                    <figure name="PageUp" class="header__logo">
+                        <a href="./index.html"> <img src="./assets/icons/logo.svg" alt=""></a>
+                    </figure>
+                    <nav class="header__navigation">
+                        <div class="header__burger"></div>
+                        <ul class="header__list">
+                            <li><a class="text-shadow" href="#">About</a></li>
+                            <li><a class="header__links" href="./pages/map/map.html">Map</a></li>
+                            <li><a class="header__links" href="./pages/zoos/panda/panda.html">Zoos</a></li>
+                            <li><a class="header__links" href="./pages/404/404.html">Contact us</a></li>
+                            <li><a class="header__links"
+                                    href="https://www.figma.com/file/aBvQMVmI665DtzprpiniuH/online-zoo?node-id=0%3A1">Design</a>
+                            </li>
+                        </ul>
 
-                </nav>
+                    </nav>
+                </div>
             </header>
             <div class="header-block__panda"></div>
 
             <div class="header-block__online">
                 <h3 class="header-block__online-title">Watch your favorite animal ONLINE</h3>
             </div>
-            <figure>
-                <img class="vector1" src="./assets/icons/vector1.svg" alt="">
-                <img class="vector2" src="./assets/icons/vector2.svg" alt="">
+            <figure class="header-block__drops">
+                <div class="header-block__drops1"></div>
+                <div class="header-block__drops2"></div>
             </figure>
             <a href="./pages/zoos/panda/panda.html" class="">
                 <button class="btn header-block__play">
@@ -77,22 +81,20 @@
                                 alt="an elephant is walking along the savanna"></a></li>
                 </ul>
                 <article class="how-it-works__article">
-                    <p class="how-it-works__text">The application Оnline zoo will allow you to watch zoos' and nature
+                    <p class="how-it-works__text">
+                        The application Оnline zoo will allow you to watch zoos' and nature
                         reserves' inhabitants in live. Currently, under video-surveillance are pandas in China, eagles
-                        on
-                        Catalina Island (USA), alligators in Florida and gorillas in the Congo. We are expanding our
+                        on Catalina Island (USA), alligators in Florida and gorillas in the Congo. We are expanding our
                         capabilities and soon online you will meet Arctic snowy owl in Alaska, Penguin in California,
                         Elephant from South Africa and Polar bear from Canada. You will see unique video-shots at any
-                        time
-                        of the day. If you liked a pet you watch and you want to please it with a delicious treat, you
-                        can
-                        pay a donation and the animal will receive a surprise from you during feeding hours. <br>We want
-                        to
-                        thank you for helping the animals and give you <span name="link"><a href="#link">discount
+                        time of the day. If you liked a pet you watch and you want to please it<br> with a delicious
+                        treat,
+                        you can pay a donation and the animal will receive a surprise from you during feeding hours. We
+                        want to
+                        thank you for helping the animals and give you <span name="link"><a class="how-it-works__linka" href="#link">discount
                                 coupons</a></span>
-                        from
-                        our
-                        partners.</p>
+                        from our partners.
+                    </p>
                 </article>
             </section>
         </div>
@@ -105,49 +107,49 @@
                 <div class="pets-in-zoo__main">
                     <div class="pets-in-zoo__arrow-left"></div>
                     <ul class="pets-in-zoo__ul">
-                        <li>
+                        <li class="pets-in-zoo__li--panda">
                             <a href="./pages/zoos/panda/panda.html">
                                 <div class=" pets-in-zoo__img pets-in-zoo__panda">
                                     <h3 class="pets-in-zoo__img-text">Panda, China</h3>
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="pets-in-zoo__li--alligator">
                             <a href="./pages/zoos/alligator/alligator.html">
                                 <div class=" pets-in-zoo__img pets-in-zoo__aligator">
                                     <h3 class="pets-in-zoo__img-text">Alligator, USA</h3>
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="pets-in-zoo__li--gorilla">
                             <a href="./pages/zoos/gorilla/gorilla.html">
                                 <div class="pets-in-zoo__img pets-in-zoo__gorilla">
                                     <h3 class="pets-in-zoo__img-text">Gorilla, Eastern DRC</h3>
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="pets-in-zoo__li--elephant">
                             <a>
                                 <div class=" pets-in-zoo__img-end-up pets-in-zoo__elephant">
                                     <h3 class="pets-in-zoo__img-text">Elephant, South Africa</h3>
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="pets-in-zoo__li--polar-bear">
                             <a>
                                 <div class="pets-in-zoo__img pets-in-zoo__polar-bear ">
                                     <h3 class="pets-in-zoo__img-text">Polar bear, Canada</h3>
                                 </div>
                             </a>
                         </li>
-                        <li>
+                         <li class="pets-in-zoo__li--eagle">
                             <a href="./pages/zoos/eagle/eagle.html">
                                 <div class=" pets-in-zoo__img pets-in-zoo__eagle">
                                     <h3 class="pets-in-zoo__img-text">Bald eagle, USA</h3>
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="pets-in-zoo__li--owl">
                             <a>
                                 <div class=" pets-in-zoo__img pets-in-zoo__owl">
                                     <h3 class="pets-in-zoo__img-text">Arctic snowy owl, Alaska
@@ -155,7 +157,7 @@
                                 </div>
                             </a>
                         </li>
-                        <li>
+                        <li class="pets-in-zoo__li--penguin">
                             <a>
                                 <div class=" pets-in-zoo__img-end-down pets-in-zoo__penguin">
                                     <h3 class="pets-in-zoo__img-text">Penguin, USA</h3>
@@ -174,20 +176,20 @@
             <section class="pay-and-feed__content">
                 <h2 class="pay-and-feed__title">Pay and feed</h2>
                 <div class="pay-and-feed__grafic">
-                    <section class="pay-and-feed__block">
+                    <section class="pay-and-feed__block pay-and-feed__block--card">
                         <img class="pay-and-feed__bg" src="./assets/icons/vector-orange.svg" alt="">
                         <img class="pay-and-feed__img" src="./assets/icons/cards.svg" alt="from bank cards">
                         <p class="pay-and-feed__p">You can pay for a donation to any animal using your Credit/Debit card
                         </p>
                     </section>
-                    <section class="pay-and-feed__block">
+                    <section class="pay-and-feed__block pay-and-feed__block--bank">
                         <img class="pay-and-feed__bg" src="./assets/icons/vector-orange.svg" alt="">
                         <img class="pay-and-feed__img" src="./assets/icons/bank.svg" alt="to bank account of zoo">
                         <p class="pay-and-feed__p">Donations will go to the account of the zoo or nature reserve
                         </p>
                     </section>
-                    <section class="pay-and-feed__block">
-                        <img class="pay-and-feed__bg" src="./assets/icons/vector-orange.svg" alt="">
+                    <section class="pay-and-feed__block pay-and-feed__block--panda">
+                        <img class="pay-and-feed__bg pay-and-feed__bg--panda" src="./assets/icons/vector-orange.svg" alt="">
                         <img class="pay-and-feed__img-animal" src="./assets/icons/panda-eat.svg"
                             alt="result: happy panda eats bamboo">
                         <p class="pay-and-feed__p">The animal will receive a delicious treat during feeding hours
@@ -196,7 +198,8 @@
                 </div>
                 <img class="pay-and-feed__arrowhead" src="./assets/icons/arrowhead.svg" alt="">
                 <img class="pay-and-feed__arrowhead-up" src="./assets/icons/arrowhead-up.svg" alt="">
-                <img class="pay-and-feed__arrow-dotted" src="./assets/icons/arrow-dotted.svg" alt="">
+                <div class="pay-and-feed__arrow-dotted"></div>
+                <!-- <img class="pay-and-feed__arrow-dotted" src="./assets/icons/arrow-dotted.svg" alt=""> -->
             </section>
         </div>
 
@@ -204,9 +207,9 @@
             <section class="testimonials">
                 <h2 class="testimonials__title-h2">Testimonials</h2>
                 <section class="testimonials__content">
-                    <div class="pets-in-zoo__arrow-left"></div>
+                    <div class="testimonials__arrow-left"></div>
                     <ul class="testimonials__ul">
-                        <li class="testimonials__elem">
+                        <li class="testimonials__elem testimonials__elem--1">
                             <section class="testimonials__elem-top">
                                 <img class="testimonials__elem-avatar" src="./assets/icons/beard-man.png" width="52"
                                     height="52" alt="">
@@ -219,12 +222,12 @@
 
                                 </div>
                             </section>
-                            <p class="testimonials__comment"> "Thank you so much for these wonderful live webcams of the
+                            <p class="testimonials__comment testimonials__comment--1-text"> "Thank you so much for these wonderful live webcams of the
                                 eagles on Catalina Island. Being able to watch them in their natural habitat as opposed
                                 to zoos is so wonderful. I cannot see myself ever being able to come up there to see
                                 them in person, so this is a great substitute. Thank you again."</p>
                         </li>
-                        <li class="testimonials__elem">
+                        <li class="testimonials__elem testimonials__elem--2">
                             <section class="testimonials__elem-top">
                                 <img class="testimonials__elem-avatar" src="./assets/icons/chair-woman.png" width="52"
                                     height="52" alt="">
@@ -237,11 +240,11 @@
 
                                 </div>
                             </section>
-                            <p class="testimonials__comment"> "A disability prevents me from enjoying the outdoors and
+                            <p class="testimonials__comment testimonials__comment--2-text"> "A disability prevents me from enjoying the outdoors and
                                 travel like I used to do. I really enjoy all the live cams and can spend HOURS watching
                                 real-time entertainment. Wild life style!"</p>
                         </li>
-                        <li class="testimonials__elem">
+                        <li class="testimonials__elem testimonials__elem--3">
                             <section class="testimonials__elem-top">
                                 <img class="testimonials__elem-avatar" src="./assets/icons/glasses-boy.png" width="52"
                                     height="52" alt="">
@@ -258,7 +261,7 @@
                                 me to travel the world without ever leaving the comfort of my office chair. Jammies on
                                 and coffee cup in hand, I am Phineas Fogg!!"</p>
                         </li>
-                        <li class="testimonials__elem">
+                        <li class="testimonials__elem testimonials__elem--4">
                             <section class="testimonials__elem-top">
                                 <img class="testimonials__elem-avatar" src="./assets/icons/hot-girl.png" width="52"
                                     height="52" alt="">
@@ -277,7 +280,7 @@
                                 small reward"</p>
                         </li>
                     </ul>
-                    <div class="pets-in-zoo__arrow-right"></div>
+                    <div class="testimonials__arrow-right"></div>
 
                 </section>
                 <button class="btn testimonials__btn-feedback">Leave feedback</button>
@@ -287,7 +290,7 @@
     <div class="footer__wrapper">
 
         <footer class="footer">
-            <div class="footer__vector"> </div>
+            <div class="footer__vector"></div>
             <div class="footer__vector-small"></div>
 
             <section class="footer__container">
@@ -338,12 +341,11 @@
                 </section>
                 <section class="footer__second-line">
                     <figure class="footer__school-logo">
-                        <img title="Rolling Scopes School" src="./assets/icons/rs-school.svg"
-                            alt="rs school logo">
+                        <img title="Rolling Scopes School" src="./assets/icons/rs-school.svg" alt="rs school logo">
                         <img title="Yem Digital" src="./assets/icons/yem-digital.svg" alt="yem-digital logo">
                     </figure>
-                    <span class="footer__text to-left-text">Copyright ©RSSchool and ©Yem Digital 2020 - 2021</span>
-                    <span class="footer__text">Grigoreva Margarita</span>
+                    <span class="footer__text to-left-text footer__text--school">Copyright ©RSSchool and ©Yem Digital 2020 - 2021</span>
+                    <span class="footer__text footer__text--disaner">Grigoreva Margarita</span>
                 </section>
             </section>
         </footer>

@@ -9,19 +9,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="../../style-common.css">
+    <link rel="icon" href="../../assets/icons/favicon.png" type="image/x-icon">
+
 
     <title>Map</title>
 </head>
 
 <body class="body">
+
     <h1 name="PageUp" class="visually-hidden">Online Zoo</h1>
+
     <div class="main-block">
 
         <header class="header">
+            <div class="header__content">
+
+        
             <figure class="header__logo">
                 <a href="../../index.html"> <img src="../../assets/icons/logo.svg" alt=""></a>
             </figure>
             <nav class="header__navigation">
+                <div class="header__burger"></div>
                 <ul class="header__list">
                     <li><a class="header__links" href="../../index.html">About</a></li>
                     <li><a class="text-shadow" href="#">Map</a></li>
@@ -33,13 +41,15 @@
                 </ul>
 
             </nav>
+        </div>
         </header>
 
 
 
         <main class="main-block__map">
             <figure class="map__content">
-                <img src="../../assets/images/map.svg" alt="map" class="map__world">
+                <div class="map__world"></div>
+                <!-- <img src="../../assets/images/map.svg" alt="map" class="map__world"> -->
             </figure>
             <aside>
                 
@@ -183,13 +193,13 @@
                             alt="rs school logo">
                         <img title="Yem Digital" src="../../assets/icons/yem-digital.svg" alt="yem-digital logo">
                     </figure>
-                    <span class="footer__text to-left-text">Copyright ©RSSchool and ©Yem Digital 2020 - 2021</span>
-                    <span class="footer__text">Grigoreva Margarita</span>
+                    <span class="footer__text to-left-text footer__text--school">Copyright ©RSSchool and ©Yem Digital 2020 - 2021</span>
+                    <span class="footer__text footer__text--disaner">Grigoreva Margarita</span>
                 </section>
             </section>
         </footer>
     </div>
-    <script defer src="./script.js"></script>
+    <!-- <script defer src="./script.js"></script> -->
     <script defer src="../../script-common.js"></script>
 </body>
 
