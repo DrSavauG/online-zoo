@@ -94,12 +94,9 @@
 }
 
 .header__logo {
-    z-index: 2;
-    /* position: absolute; */
+    z-index: 5;
     width: 112px;
     height: 57px;
-    /* left: 380px; */
-    /* top: 0px; */
     border-radius: 3px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
@@ -512,3 +509,11 @@ top: 316px;
 
     /* #endregion footer-640 */
 }
+/* #endregion index-640px */
+
+
+
+
+
+
+

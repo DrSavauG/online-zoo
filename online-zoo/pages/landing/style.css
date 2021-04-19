@@ -1157,7 +1157,10 @@ display: column; */
 
     }
 
-    .pets-in-zoo__li {
+    .pets-in-zoo__li--polar-bear ,
+    .pets-in-zoo__li--alligator,
+    .pets-in-zoo__li--eagle,
+    .pets-in-zoo__li--panda{
         width: 187px;
         height: 300px;
         margin: 0 20px 30px 0;
@@ -1171,7 +1174,7 @@ display: column; */
     }
 
 
-    .li-penguin {}
+    /* .li-penguin {} */
 
     .pets-in-zoo__img {
         width: 187px;
@@ -1243,6 +1246,7 @@ display: column; */
         flex-wrap: wrap;
         margin-top: 0px;
     }
+
     .pay-and-feed__block--card,
     .pay-and-feed__block--bank {
         margin-top: 14px;
@@ -1385,90 +1389,400 @@ display: column; */
 
     /*#endregion Testimonials*/
 
- /*#region Footer*/
+    /*#region Footer*/
 
- .footer__wrapper {
-    min-width: 640px;
-    width: 100%;
-    height: 359px;
-}
+    .footer__wrapper {
+        min-width: 640px;
+        width: 100%;
+        height: 359px;
+    }
 
-.footer{
-   margin: -80px auto 0;
-    width: 100%;
-    height: 100%;
-}
+    .footer {
+        margin: -80px auto 0;
+        width: 100%;
+        height: 100%;
+    }
 
-.footer__vector {
-    top: -15px;
-    left: -60px;
-}
+    .footer__vector {
+        top: -15px;
+        left: -60px;
+    }
 
-.footer__container {
-    width: 100%;
-    height: 157px;
-    margin-top: 80px;
-    align-self: baseline;
-}
+    .footer__container {
+        width: 100%;
+        height: 157px;
+        margin-top: 80px;
+        align-self: baseline;
+    }
 
-.footer__first-line {
-    width: 600px;
-    height: 57px;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: space-between;
-}
+    .footer__first-line {
+        width: 600px;
+        height: 57px;
+        margin-right: auto;
+        margin-left: auto;
+        justify-content: space-between;
+    }
 
-.footer__second-line {
-    width: 100%;
-    height: 50px;
-    justify-content: start;
-    margin-top: 50px;
-}
+    .footer__second-line {
+        width: 100%;
+        height: 50px;
+        justify-content: start;
+        margin-top: 50px;
+    }
 
-.footer__logo {
-    margin-right: -7px;
-}
+    .footer__logo {
+        margin-right: -7px;
+    }
 
-.footer__btn-donate {
-    position: absolute;
-    top: 187px;
-    left: 413px;
-    width: 207px;
-    height: 50px;
-    padding: 14px 10px 15px;
-}
+    .footer__btn-donate {
+        position: absolute;
+        top: 187px;
+        left: 413px;
+        width: 207px;
+        height: 50px;
+        padding: 14px 10px 15px;
+    }
 
-.footer__navigation {
-    width: 190px;
-    position: relative;
-    left: 0px;
-    top: 0px
-}
+    .footer__navigation {
+        width: 190px;
+        position: relative;
+        left: 0px;
+        top: 0px
+    }
 
-.footer__school-logo {
-    width: 313px;
-    margin-left: 20px;
-}
+    .footer__school-logo {
+        width: 313px;
+        margin-left: 20px;
+    }
 
-.footer__text--school{
-    position: absolute;
+    .footer__text--school {
+        position: absolute;
 
-    width: 416px;
-height: 21px;
-left: calc(50% - 416px/2);
-top: 316px;
+        width: 416px;
+        height: 21px;
+        left: calc(50% - 416px/2);
+        top: 316px;
 
-}
+    }
 
-.footer__text--disaner{
-    position: absolute;
-    top: 285px;
-    left: 240px;
-}
+    .footer__text--disaner {
+        position: absolute;
+        top: 285px;
+        left: 240px;
+    }
 
-/*#endregion Footer*/
+    /*#endregion Footer*/
 
 }
 
 /* #endregion media-640px */
+
+
+
+/* #region index-320px */
+
+
+
+@media all and (max-width: 320px) {
+
+
+    /* header */
+    .header {
+        width: 100%;
+    }
+
+    .header__navigation {
+        visibility: hidden;
+    }
+
+    .header__burger {
+        visibility: visible;
+        position: absolute;
+        z-index: 5;
+        width: 36px;
+        height: 22px;
+        right: 10px;
+        top: 28px;
+        background: url(../../assets/icons/burger.svg)
+    }
+
+
+
+
+
+    .header__logo {
+        margin-left: -10px;
+    }
+
+    /* endheader */
+
+    .header-block {
+        min-width: 320px;
+    }
+
+    .header-block__online {
+        left: 10px;
+        z-index: 5;
+        width: 220px;
+        height: 300px;
+    }
+
+    .header-block__play {
+        width: 220px;
+        height: 51px;
+        left: 10px;
+        top: 500px;
+    }
+
+    .header-block__panda {
+        height: 700px;
+        left: 0px;
+        top: 27px;
+        background-repeat: no-repeat;
+        z-index: 4;
+    }
+
+    .header-block__drops1 {
+        width: 143.16px;
+        height: 300.25px;
+        left: 42.79px;
+        top: 102px;
+        background: url(../../assets/images/320-drops1.svg) no-repeat;
+    }
+
+    .header-block__drops2 {
+        display: none;
+    }
+
+
+
+    /*#region hot-it-works*/
+
+    .how-it-works {
+        min-width: 320px;
+        width: 100%;
+        height: 1256px;
+        overflow: hidden;
+    }
+
+    .how-it-works__content {
+        width: 300px;
+        height: 1056px;
+    }
+
+    .how-it-works__ul {
+        width: 300px;
+        height: 363px;
+    }
+
+    .how-it-works__li-right {
+        display: none;
+    }
+
+    .how-it-works__li-left {
+        width: 140px;
+        height: 215px;
+        position: absolute;
+        top: -11px;
+        right: 91px;
+        /* z-index: 3; */
+        visibility: visible;
+        z-index: 2;
+    }
+
+    .how-it-works__li-2 {
+        position: absolute;
+        width: 160px;
+        height: 215px;
+        top: -46px;
+        left: 80px;
+        z-index: 1;
+    }
+
+    .how-it-works__li-center {
+        width: 140px;
+        height: 215px;
+        position: absolute;
+        top: 154px;
+        left: 20px;
+        z-index: 4;
+        background-image: url(../../assets/images/hiw-panda-320.png);
+    }
+
+    .how-it-works__li-4 {
+        width: 160px;
+        height: 215px;
+        position: absolute;
+        top: 190px;
+        left: 219px;
+        z-index: 1;
+    }
+
+    .how-it-works__article {
+        width: 300px;
+        height: 399px;
+    }
+
+    .how-it-works__text {
+        width: 300px;
+        height: 399px;
+    }
+
+    /*#endregion hot-it-works*/
+
+    /*#region Pets in zoo*/
+
+
+    .pets-in-zoo {
+        min-width: 320px;
+        width: 100%;
+        height: 1152px;
+        position: relative;
+    }
+
+    .lets-in-zoo__li--polar-bear,
+    .lets-in-zoo__li--owl {
+        display: none;
+    }
+
+    .pets-in-zoo__main {
+        width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 95px;
+    }
+
+    .pets-in-zoo__ul>li {
+        width: 140px;
+        height: 300px;
+    }
+
+    .pets-in-zoo__img {
+        width: 140px;
+        height: 300px;
+        background-position: center;
+    }
+
+    /* .pets-in-zoo__li--gorilla {
+        margin-right: 20px;
+    }
+
+    .pets-in-zoo__li--panda {
+        margin-right: 20px;
+    } */
+
+    /* .pets-in-zoo__ul> li{
+        margin: 0 0 0 0;
+    } */
+    .pets-in-zoo__li--polar-bear,
+    .pets-in-zoo__li--owl{
+        display: none;
+    }
+
+
+
+    .pets-in-zoo__li--panda,
+    .pets-in-zoo__li--gorilla{
+        margin: 0 20px 30px 0;
+
+    }
+    .pets-in-zoo__img-text{
+        padding-top: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    /* .pets-in-zoo__li--eagle, */
+    /* .pets-in-zoo__li--panda, */
+
+    .pets-in-zoo__li--alligator,
+    .pets-in-zoo__li--eagle {
+        margin: 0 0 30px 0;
+    }
+
+    .pets-in-zoo__arrow-right {
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        left: 170px;
+        top: 887px;
+        bottom: 0%;
+    }
+
+    .pets-in-zoo__arrow-left {
+        width: 64px;
+        height: 64px;
+        position: absolute;
+        left: 87px;
+        top: 887px;
+        bottom: 0%;
+    }
+
+    .pets-in-zoo__choose-btn {
+        width: 300px;
+        height: 51px;
+    }
+
+    /*#endregion Pets in zoo*/
+
+    /*#region Pay and feed*/
+
+    .pay-and-feed {
+        min-width: 320px;
+        height: 1372px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .pay-and-feed__content {
+        width: 263px;
+        height: 1172px;
+        flex-wrap: wrap;
+    }
+
+    .pay-and-feed__title {
+        width: 232px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .pay-and-feed__grafic {
+        width: 263px;
+        height: 1045px;
+        flex-direction: column;
+    }
+
+    .pay-and-feed__block--panda {
+        margin-left: 0px;
+        left: 0px;
+    }
+
+    .pay-and-feed__block--card,
+    .pay-and-feed__block--bank,
+    .pay-and-feed__block--panda{
+        width: 263px;
+        height: 295px;
+        margin-top: 0px;
+        left: 0px;
+    }
+
+    .pay-and-feed__block--card {
+        margin-top: 0px;
+    }
+
+    .pay-and-feed__arrow-dotted {
+        position: absolute;
+        left: 28px;
+        top: 227px;
+        width: 263px;
+        height: 1045px;
+        background: url(../../assets/icons/arrow-dotted-320.svg);
+    }
+    .pay-and-feed__p{
+        margin-left: 34px;
+    }
+
+    /*#endregion Pay and feed*/
+
+}
+
+/* #endregion index-320px */
