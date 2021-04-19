@@ -396,3 +396,34 @@ text-shadow: #70cb0e 1px 1px 0;
 }
 
 /* #endregion media-1200 */
+
+/* #region media-640px */
+
+@media all and (max-width: 640px) {
+    .header-block {
+        min-width: 640px;
+        width: 100%;
+        height: 700px;
+    }
+
+
+    /* #region header */
+    .header {
+        width: 100%;
+        z-index: 5;
+    }
+
+    .header-block__content {
+        margin: 0 auto;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* #endregion header */
+
+    /* #region footer-640 */
+
+    
+
+    /* #endregion footer-640 */
+}
