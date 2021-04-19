@@ -1385,8 +1385,89 @@ display: column; */
 
     /*#endregion Testimonials*/
 
+ /*#region Footer*/
 
-   
+ .footer__wrapper {
+    min-width: 640px;
+    width: 100%;
+    height: 359px;
+}
+
+.footer{
+   margin: -80px auto 0;
+    width: 100%;
+    height: 100%;
+}
+
+.footer__vector {
+    top: -15px;
+    left: -60px;
+}
+
+.footer__container {
+    width: 100%;
+    height: 157px;
+    margin-top: 80px;
+    align-self: baseline;
+}
+
+.footer__first-line {
+    width: 600px;
+    height: 57px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+.footer__second-line {
+    width: 100%;
+    height: 50px;
+    justify-content: start;
+    margin-top: 50px;
+}
+
+.footer__logo {
+    margin-right: -7px;
+}
+
+.footer__btn-donate {
+    position: absolute;
+    top: 187px;
+    left: 413px;
+    width: 207px;
+    height: 50px;
+    padding: 14px 10px 15px;
+}
+
+.footer__navigation {
+    width: 190px;
+    position: relative;
+    left: 0px;
+    top: 0px
+}
+
+.footer__school-logo {
+    width: 313px;
+    margin-left: 20px;
+}
+
+.footer__text--school{
+    position: absolute;
+
+    width: 416px;
+height: 21px;
+left: calc(50% - 416px/2);
+top: 316px;
+
+}
+
+.footer__text--disaner{
+    position: absolute;
+    top: 285px;
+    left: 240px;
+}
+
+/*#endregion Footer*/
 }
 
 /* #endregion media-640px */
