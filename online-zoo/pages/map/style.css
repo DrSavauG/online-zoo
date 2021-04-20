@@ -401,7 +401,6 @@ a {
 
 @media all and (max-width: 640px) {
     /* //////////////// */
-    
 
 html{
     overflow-x: hidden;
@@ -483,6 +482,85 @@ top: calc(50% - 64px/2 + 125px);
     .toolbar__panda {
         left: calc(50% - 64px/2 + 307px);
         top: calc(50% - 64px/2 + 38px);
+    }
+
+}
+
+
+
+
+
+@media all and (max-width: 320px) {
+    /* //////////////// */
+
+html{
+    overflow-x: hidden;
+} 
+
+.main-block{
+    min-width: 320px;
+    width: 100%;
+    height: 880px;;
+} 
+
+.main-block__content{
+    width: 320px;
+    height: 880px;
+}
+
+.main-block__map{
+    width: 320px;
+    height: 800px;
+}
+
+.map__content{
+    width: 320px;
+    height: 800px;
+   
+}
+
+.map__world{
+    background-image: url(../../assets/icons/map640.svg);
+    width: 933px;
+    height: 600px;
+    position: relative;
+    top: 99px;
+    left: -41px;
+}
+
+.usa-xy{
+    top: 399px;
+    left: 11px;
+}
+
+.eastern-drc-xy{
+    left: calc(50% - 73px/2 + 80.5px);
+    top: calc(50% - 42px/2 + 148px);
+    width: 73px;
+    height: 42px;
+}
+
+.china-xy{
+    top: 417px;
+    left: 515px;
+}
+
+.toolbar__alligator{
+    left: calc(50% - 64px/2 - 70px);
+    top: calc(50% - 64px/2 + 43px);
+}
+
+.toolbar__gorilla{
+display: none;
+
+}
+
+    .toolbar__eagle {
+      display: hidden;
+    }
+
+    .toolbar__panda {
+       display: hidden;
     }
 
 }
