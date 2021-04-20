@@ -330,7 +330,7 @@ a {
     position: sticky;
     width: 32px;
     height: 80px;
-    left: 95%;
+    left: 90%;
     bottom:100px;
 
     z-index: 5;
@@ -561,6 +561,10 @@ color: #000000;
 
 @media all and (max-width: 320px) {
     /* //////////////// */
+
+    .map__zoom {
+        /* left: -10px; */
+    }
 
     html {
         overflow-x: hidden;
