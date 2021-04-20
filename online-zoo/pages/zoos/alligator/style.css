@@ -4,6 +4,14 @@
     margin: 0 auto;
 }
 
+.main__btn-feed{
+display:none;
+visibility:hidden;
+width: 1px;
+height: 1px;
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+}
 .zoos__indent {
     width: 1920px;
     height: 207px;
@@ -470,7 +478,7 @@
 /* #endregion zoos-1200px */
 
 /* #region zoos-640px */
-@media screen and (max-width: 640px) {
+@media all and (max-width: 640px) {
 
     html {
         overflow-x: hidden;
@@ -570,3 +578,137 @@ display:block;
 }
 
 /* #endregion zoos-640px */
+
+
+
+/* #region zoos-320px */
+
+@media all and (max-width: 320px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+    .body {
+        height: 2061px;
+    }
+
+    .main__content {
+        width: 320px;
+        /* height: 2000px; */
+        justify-content: start;
+    }
+
+    .main-wrapper {
+        width: 320px;
+         
+        height: 1541px;
+        /* height: 1541px; */
+
+    }
+.main__center{
+    width: 300px;
+    /* height: 1500px; */
+    /* height: 1234px; */
+}
+    .main__video-big {
+        width: 300px;
+        height: 169px;
+margin: 0 auto;
+    }
+
+    .main__video-small-1 ,
+    .main__video-small-2,
+    .main__video-small-3,
+    .main__video-small-4 {
+        width: 140px;
+        height: 82px;
+        /* margin: 3px 0 ; */
+        margin-bottom: 20px;
+    }
+    .main__videos-small{
+        width: 300px;
+        height: 184px;
+        flex-wrap: wrap;
+        margin:12px 0 10px 0;
+    }
+    .main__description-wrapper{
+width: 300px;
+height: 131px;
+margin: 32px 0 0;
+/* display: inline; */
+
+background: #A7E1FF;
+flex-direction: column;
+    }
+.plugin{
+ visibility: hidden;
+
+}
+.description-block--1{
+    width: 300px;
+    height: 40px;
+    margin: 0;
+    align-items: flex-start;
+}
+.description-block--2{
+    width: 300px;
+    height: 40px;
+    margin: 45px 0 0;
+    align-items: flex-end;
+
+}
+.main__description{
+    width: 300px;
+    /* height: 385px; */
+    margin-top: 20px;
+display:block;
+}
+.main__description-box{
+    width: 300px;
+    margin-bottom: 20px;
+    height:auto;
+}
+.main-block__animal{
+    width: 300px;
+}
+
+
+.main-block__animal-down{
+    width: 300px;
+    height: 237px;
+}
+.main-block__arrow-rolled,
+.main-block__arrow  {
+    margin-left: 235px;
+}
+
+.main__btn-feed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    margin: 20px auto;
+    
+    /* position: absolute; */
+    width: 300px;
+    height: 51px;
+    /* left: calc(50% - 300px/2);
+    top: 396px; */
+    
+    /* Style_1 */
+    
+    background: #70CB0E;
+    border-radius: 30px;
+}
+.main__description-title{
+    margin:20px 20px 0;
+}
+
+}
+
+/* #endregion zoos-320px */
+
+
+
