@@ -321,16 +321,18 @@ a {
 
 
 .map__zoom {
-    position: absolute;
+    position: sticky;
     width: 32px;
     height: 80px;
-    right: 20px;
-    bottom: 100px;
+    left: 95%;
+    bottom:100px;
+
     z-index: 5;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
     background-color: white;
     border-radius: 8%;
     cursor: pointer;
+
 }
 
 .map__minus {
@@ -402,78 +404,80 @@ a {
 @media all and (max-width: 640px) {
     /* //////////////// */
 
-html{
-    overflow-x: hidden;
-} 
+    html {
+        overflow-x: hidden;
+    }
 
-.main-block{
-    min-width: 640px;
-    width: 100%;
-    height: 880px;;
-} 
+    .main-block {
+        min-width: 640px;
+        width: 100%;
+        height: 880px;
+        ;
+    }
 
-.main-block__content{
-    width: 640px;
-    height: 880px;
-}
+    .main-block__content {
+        width: 640px;
+        height: 880px;
+    }
 
-.main-block__map{
-    width: 640px;
-    height: 800px;
-}
+    .main-block__map {
+        width: 640px;
+        height: 800px;
+    }
 
-.map__content{
-    width: 640px;
-    height: 800px;
-   
-}
+    .map__content {
+        width: 640px;
+        height: 800px;
 
-.map__world{
-    background-image: url(../../assets/icons/map640.svg);
-    width: 933px;
-    height: 600px;
-    position: relative;
-    left: 0;
-top: 100px;
-}
+    }
 
-.usa-xy{
-    top: 399px;
-    left: 11px;
-}
+    .map__world {
+        background-image: url(../../assets/icons/map640.svg);
+        width: 933px;
+        height: 600px;
+        position: relative;
+        left: 0;
+        top: 100px;
+    }
 
-.eastern-drc-xy{
-    top: 527px;
-    left: 245px;
-    width: 73px;
-    height: 42px;
-}
+    .usa-xy {
+        top: 399px;
+        left: 11px;
+    }
 
-.china-xy{
-    top: 417px;
-    left: 515px;
-}
+    .eastern-drc-xy {
+        top: 527px;
+        left: 245px;
+        width: 73px;
+        height: 42px;
+    }
 
-.toolbar__alligator{
-    top: 410px;
-    left: 100px;
-}
-
-.toolbar__gorilla{
-    left: calc(50% - 64px/2 + 92px);
-top: calc(50% - 64px/2 + 125px);
-
-}
-
-    .toolbar__eagle {
-      display: hidden;
+    .china-xy {
+        top: 417px;
+        left: 515px;
     }
 
     .toolbar__alligator {
-       display: hidden;
-        
+        top: 410px;
+        left: 100px;
     }
-/* 
+
+    .toolbar__gorilla {
+        left: calc(50% - 64px/2 + 92px);
+        top: calc(50% - 64px/2 + 125px);
+
+    }
+
+    .toolbar__eagle {
+        display: hidden;
+    }
+
+    .toolbar__alligator {
+        display: hidden;
+
+    }
+
+    /* 
     .eastern-drc-xy {
         left: calc(50% - 73px/2 - 38.5px);
         top: calc(50% - 42px/2 + 148px);
@@ -493,74 +497,75 @@ top: calc(50% - 64px/2 + 125px);
 @media all and (max-width: 320px) {
     /* //////////////// */
 
-html{
-    overflow-x: hidden;
-} 
+    html {
+        overflow-x: hidden;
+    }
 
-.main-block{
-    min-width: 320px;
-    width: 100%;
-    height: 880px;;
-} 
+    .main-block {
+        min-width: 320px;
+        width: 100%;
+        height: 880px;
+        ;
+    }
 
-.main-block__content{
-    width: 320px;
-    height: 880px;
-}
+    .main-block__content {
+        width: 320px;
+        height: 880px;
+    }
 
-.main-block__map{
-    width: 320px;
-    height: 800px;
-}
+    .main-block__map {
+        width: 320px;
+        height: 800px;
+    }
 
-.map__content{
-    width: 320px;
-    height: 800px;
-   
-}
+    .map__content {
+        width: 320px;
+        height: 800px;
 
-.map__world{
-    background-image: url(../../assets/icons/map640.svg);
-    width: 933px;
-    height: 600px;
-    position: relative;
-    top: 99px;
-    left: -41px;
-}
+    }
 
-.usa-xy{
-    top: 399px;
-    left: 11px;
-}
+    .map__world {
+        background-image: url(../../assets/icons/map640.svg);
+        width: 933px;
+        height: 600px;
+        position: relative;
+        top: 99px;
+        left: -41px;
+    }
 
-.eastern-drc-xy{
-    left: calc(50% - 73px/2 + 80.5px);
-    top: calc(50% - 42px/2 + 148px);
-    width: 73px;
-    height: 42px;
-}
+    .usa-xy {
+        top: 399px;
+        left: 11px;
+    }
 
-.china-xy{
-    top: 417px;
-    left: 515px;
-}
+    .eastern-drc-xy {
+        left: calc(50% - 73px/2 + 80.5px);
+        top: calc(50% - 42px/2 + 148px);
+        width: 73px;
+        height: 42px;
+    }
 
-.toolbar__alligator{
-    left: calc(50% - 64px/2 - 70px);
-    top: calc(50% - 64px/2 + 43px);
-}
+    .china-xy {
+        top: 417px;
+        left: 515px;
+    }
 
-.toolbar__gorilla{
-display: none;
+    .toolbar__alligator {
+        left: calc(50% - 64px/2 - 70px);
+        top: calc(50% - 64px/2 + 43px);
+    }
 
-}
+    .toolbar__gorilla {
+        display: none;
+
+    }
 
     .toolbar__eagle {
-      display: hidden;
+        display: hidden;
     }
 
     .toolbar__panda {
-       display: hidden;
+        display: hidden;
     }
 
 }

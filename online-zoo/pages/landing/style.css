@@ -643,9 +643,9 @@ a {
     width: 520.67px;
     height: 405.09px;
     left: 726px;
-    top: 132px;
+    /* top: 132px; */
     background: url(../../assets/icons/arrow-dotted.svg) no-repeat;
-    /*! top: 238px; */
+    top: 238px;
     /* background-repeat: no-repeat; */
 
 }
