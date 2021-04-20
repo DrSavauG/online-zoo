@@ -38,7 +38,6 @@
     /* height: 61px; */
     display: flex;
     /* justify-content: space-between; */
-    /* background: #A7E1FF; */
 }
 
 .plugin {
@@ -141,9 +140,11 @@
     background: url(../../../assets/icons/toolbar_bg.svg);
 }
 
-.toolbar__arrow{
+.toolbar__arrow {
+    z-index: 4;
+
     position: absolute;
-visibility: hidden;
+    visibility: hidden;
 }
 
 .toolbar__pictures {
@@ -161,12 +162,12 @@ visibility: hidden;
     height: 64px;
     cursor: pointer;
     border-radius: 50%;
-    box-shadow:0px 0px 0px 2px white inset;
+    box-shadow: 0px 0px 0px 2px white inset;
 
 }
 
-.selected{
-    box-shadow:0px 0px 0px 4px #70CB0E inset;
+.selected {
+    box-shadow: 0px 0px 0px 4px #70CB0E inset;
 }
 
 
@@ -190,7 +191,7 @@ visibility: hidden;
 .toolbar__circle-svg {
     display: flex;
     justify-content: center;
-     background-color: #70CB0E;
+    background-color: #70CB0E;
 }
 
 .toolbar__panda-svg {
@@ -233,20 +234,21 @@ visibility: hidden;
     transition: opacity 0.5s;
     visibility: hidden;
     /* сместить */
-    transform:   translateY(15%);
-    
+    transform: translateY(15%);
+
 }
 
 .tooltip::after {
     content: " ";
     position: absolute;
     top: 50%;
-    right: 100%; 
+    right: 100%;
     margin-top: -7px;
     border-width: 7px;
     border-style: solid;
     border-color: transparent #70CB0E transparent transparent;
 }
+
 .selected .tooltip,
 .toolbar__el:hover .tooltip {
     opacity: 1;
@@ -291,14 +293,15 @@ visibility: hidden;
 
 /* #region main__description */
 
-.main__description-box{
+.main__description-box {
     width: 570px;
     height: 304px;
     display: flex;
     flex-direction: column;
     justify-content: start;
 }
-.main__description{
+
+.main__description {
     height: 304px;
     width: 1160px;
     display: flex;
@@ -307,7 +310,7 @@ visibility: hidden;
 
 
 
-.main-block__animal{
+.main-block__animal {
     width: 570px;
     height: 142px;
     background: #A7E1FF;
@@ -315,7 +318,7 @@ visibility: hidden;
     transition: 0.5s;
 }
 
-.main-block__rolled{
+.main-block__rolled {
     height: 61px;
     background: #A7E1FF;
     position: relative;
@@ -323,7 +326,7 @@ visibility: hidden;
 }
 
 
-.main-block__animal-down{
+.main-block__animal-down {
     width: 570px;
     height: 142px;
     margin-top: 20px;
@@ -331,7 +334,7 @@ visibility: hidden;
     transition: 0.5s;
 }
 
-.main-block__arrow{
+.main-block__arrow {
     position: absolute;
     margin-left: 505px;
     margin-right: 20px;
@@ -342,7 +345,7 @@ visibility: hidden;
     transition: 0.5s;
 }
 
-.main-block__animal-description{
+.main-block__animal-description {
     margin-right: 80px;
     height: 38px;
     font-family: 'Roboto', sans-serif;
@@ -355,7 +358,7 @@ visibility: hidden;
     margin-bottom: 0;
 }
 
-.main-block__down-rolled{
+.main-block__down-rolled {
     height: 61px;
     background: #A7E1FF;
     position: relative;
@@ -364,22 +367,22 @@ visibility: hidden;
 }
 
 
-.main-block__animal-article{
+.main-block__animal-article {
     margin-top: -11px;
 }
 
-.main-block__animal-title{
+.main-block__animal-title {
     text-transform: uppercase;
 }
 
 
 
-.main-block__arrow:hover{
+.main-block__arrow:hover {
     transform: scale(1.2);
 }
 
 
-.main-block__arrow-rolled{
+.main-block__arrow-rolled {
     position: absolute;
     margin-left: 505px;
     margin-right: 20px;
@@ -390,67 +393,180 @@ visibility: hidden;
     transition: 1s;
 }
 
-.main-block__arrow-up{
+.main-block__arrow-up {
     transform: rotate(90deg);
 }
-    
 
-.main-block__arrow-down{
+
+.main-block__arrow-down {
     transform: rotate(-90deg);
 }
 
-.main-block__small-frames{
+.main-block__small-frames {
     display: flex;
     justify-content: space-between;
 }
 
-.main-block__arrow-rolled:hover{
+.main-block__arrow-rolled:hover {
     transform: scale(1.2);
 }
 
 /* #endregion main__description */
 
 
+
+
+
+/* #region zoos-1200px */
+
 @media all and (max-width: 1200px) {
-    .main-wrapper{
+    .main-wrapper {
         width: 1200px;
     }
-.toolbar{
-    position: absolute;
-width: 111px;
-height: 380px;
-left: -242px;
-top: 330px;
-position: fixed;
 
-transition: 0.5s all;
-}
-.toolbar--clicked{
-left: 0px;
-position: fixed;
+    .toolbar {
+        position: absolute;
+        width: 111px;
+        height: 380px;
+        left: -242px;
+        top: 330px;
+        position: fixed;
+
+        transition: 0.5s all;
+    }
+
+    .toolbar--clicked {
+        left: 0px;
+        position: fixed;
+
+    }
+
+    .toolbar__arrow {
+        visibility: visible;
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        left: 20px;
+        top: 287px;
+        transform: rotate(180deg);
+        transition: 0.5s all;
+        position: fixed;
+
+        /* transition: 0.4 linear; */
+        /* transition: opacity 0.5s; */
+    }
+
+    .toolbar__arrow:hover {
+
+        transform: rotate(270deg);
+    }
+
+    .toolbar__arrow--clicked {
+        transform: rotate(360deg);
+    }
 
 }
 
-.toolbar__arrow{
-    visibility:visible;
-    position: absolute;
-width: 45px;
-height: 45px;
-left: 20px;
-top: 287px;
-transform: rotate(180deg);
-transition: 0.5s all;
-position: fixed;
+/* #endregion zoos-1200px */
 
-/* transition: 0.4 linear; */
-/* transition: opacity 0.5s; */
+/* #region zoos-640px */
+@media screen and (max-width: 640px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+    .body {
+        height: 2061px;
+    }
+
+    .main__content {
+        width: 640px;
+        /* height: 1784px; */
+        justify-content: start;
+    }
+
+    .main-wrapper {
+        width: 640px;
+        height: 1541px;
+
+    }
+.main__center{
+    width: 600px;
+    height: 1234px;
 }
-.toolbar__arrow:hover{
-  
-    transform: rotate(270deg);
-}
-.toolbar__arrow--clicked{
-    transform: rotate(360deg);
-}
+    .main__video-big {
+        width: 600px;
+        height: 338px;
+margin: 0 auto;
+    }
+
+    .main__video-small-1 ,
+    .main__video-small-2,
+    .main__video-small-3,
+    .main__video-small-4 {
+        width: 290px;
+        height: 167px;
+        /* margin: 3px 0 ; */
+        margin-bottom: 20px;
+    }
+    .main__videos-small{
+        width: 600px;
+        height: 354px;
+        flex-wrap: wrap;
+        margin:12px 0 10px 0;
+    }
+    .main__description-wrapper{
+width: 600px;
+height: 87px;
+margin: 32px 0 0;
+/* display: inline; */
+
+background: #A7E1FF;
+flex-direction: column;
+    }
+.plugin{
+    width: 600px;
+    height: 7px;
+    margin: 0;
 
 }
+.description-block--1{
+    width: 600px;
+    height: 40px;
+    margin: 0;
+    align-items: flex-start;
+}
+.description-block--2{
+    width: 600px;
+    height: 40px;
+    margin: 0;
+    align-items: flex-end;
+
+}
+.main__description{
+    width: 600px;
+    /* height: 385px; */
+    margin-top: 20px;
+display:block;
+}
+.main__description-box{
+    width: 600px;
+    margin-bottom: 20px;
+    height:auto;
+}
+.main-block__animal{
+    width: 600px;
+}
+
+
+.main-block__animal-down{
+    width: 600px;
+}
+.main-block__arrow-rolled,
+.main-block__arrow  {
+    margin-left: 535px;
+}
+}
+
+/* #endregion zoos-640px */
