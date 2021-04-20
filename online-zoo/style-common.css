@@ -516,9 +516,9 @@
 
 /* #endregion index-640px */
 
-
+/* #region index-320px */
 @media all and (max-width: 320px) {
- /*region header */
+ /*#region header */
  .header {
     width: 100%;
 }
@@ -543,7 +543,7 @@
     margin-left: -10px;
 }
 
-/* endregion header */
+/* #endregion header */
 
 
 
@@ -646,3 +646,4 @@
     /*#endregion Footer*/
 
 }
+/* #endregion index-320px */
