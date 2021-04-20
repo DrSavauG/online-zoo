@@ -5,6 +5,12 @@
     background: radial-gradient(71.89% 152.21% at 40.1% 50%,
             #B5E6FF 0%, #59C3FB 100%);
 }
+.tooltip__btn{
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+    /* position: absolute; */
+}
 
 a {
     text-decoration: none;
@@ -487,6 +493,65 @@ a {
         left: calc(50% - 64px/2 + 307px);
         top: calc(50% - 64px/2 + 38px);
     }
+
+    .tooltip {
+        width: 169px;
+        height: 85px;
+    top: -50%;
+
+
+    }
+    .tooltip__btn:hover{
+        transform:scale(1.02);
+        background: #fffb00;
+
+    }
+    .tooltip--panda{
+    left: -290%
+
+    }
+    .tooltip--panda::after{
+        left: 100%;
+        border-color: transparent transparent  transparent #70CB0E ;
+
+
+    }
+
+    .tooltip__btn{
+        visibility: visible;
+        transition: 0.3s all;
+        position: static;
+        width: 147px;
+        height: 40px;
+        left: calc(50% - 147px/2);
+        top: 53px;
+        
+        background: #FFB600;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        
+        /* Inside Auto Layout */
+        
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        margin: 4px auto;
+
+
+        font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+
+
+/* Style_2 */
+
+color: #000000;
+    }
+
 
 }
 

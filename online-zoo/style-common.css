@@ -2,9 +2,7 @@
     font-family: 'SceneW01-Black';
     src: url(./assets/fonts/12309.ttf);
 }
-html {
-    overflow-x: hidden;
-}
+
 
 .body {
     margin: 0;
@@ -23,12 +21,7 @@ html {
     padding: 0;
     border: 0;
 }
-.tooltip__btn{
-    width: 1px;
-    height: 1px;
-    visibility: hidden;
-    position: absolute;
-}
+
 
 .btn {
     z-index: 5;
@@ -369,7 +362,9 @@ html {
 
 @media all and (max-width: 1200px) {
 
-
+    /* html {
+        overflow-x: hidden;
+    } */
     .header {
         width: 100%;
     }
@@ -430,57 +425,6 @@ html {
     }
 
     
-    .tooltip {
-        width: 169px;
-        height: 85px;
-    top: -50%;
-
-
-    }
-    .tooltip__btn:hover{
-        transform:scale(1.02);
-        background: #fffb00;
-
-    }
-    .tooltip--panda{
-    right: 110%;
-
-    }
-    .tooltip__btn{
-        visibility: visible;
-        transition: 0.3s all;
-        position: static;
-        width: 147px;
-        height: 40px;
-        left: calc(50% - 147px/2);
-        top: 53px;
-        
-        background: #FFB600;
-        border-radius: 30px;
-        border: none;
-        cursor: pointer;
-        
-        /* Inside Auto Layout */
-        
-        flex: none;
-        order: 2;
-        flex-grow: 0;
-        margin: 4px auto;
-
-
-        font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 21px;
-/* identical to box height */
-
-
-/* Style_2 */
-
-color: #000000;
-    }
-
 
     /* #endregion header */
 
