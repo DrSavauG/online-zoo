@@ -77,8 +77,15 @@ transition: 0.3s linear;
 
     }
 }
+/* @media all and (max-width:540px){
+    .main-404{
+        width: 260px;
+        height: 296px;
+        background: url(../../assets/images/404-320.svg) no-repeat;
 
-@media all and (max-width:320px){
+    }
+} */
+@media all and (max-width:480px){
     .main-404{
         width: 260px;
         height: 296px;

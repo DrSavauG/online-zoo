@@ -5,7 +5,8 @@
     background: radial-gradient(71.89% 152.21% at 40.1% 50%,
             #B5E6FF 0%, #59C3FB 100%);
 }
-.tooltip__btn{
+
+.tooltip__btn {
     width: 1px;
     height: 1px;
     visibility: hidden;
@@ -331,7 +332,7 @@ a {
     width: 32px;
     height: 80px;
     left: 90%;
-    bottom:100px;
+    bottom: 100px;
 
     z-index: 5;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
@@ -439,7 +440,8 @@ a {
 
     .map__world {
         background-image: url(../../assets/icons/map640.svg);
-        width: 933px;
+        /* width: 933px; */
+        max-width: 640px;
         height: 600px;
         position: relative;
         left: 0;
@@ -497,27 +499,27 @@ a {
     .tooltip {
         width: 169px;
         height: 85px;
-    top: -50%;
+        top: -50%;
 
 
     }
-    .tooltip__btn:hover{
-        transform:scale(1.02);
+
+    .tooltip__btn:hover {
+        transform: scale(1.02);
         background: #fffb00;
 
     }
-    .tooltip--panda{
-    left: -290%
 
+    .tooltip--panda {
+        left: -290%
     }
-    .tooltip--panda::after{
+
+    .tooltip--panda::after {
         left: 100%;
-        border-color: transparent transparent  transparent #70CB0E ;
-
-
+        border-color: transparent transparent transparent #70CB0E;
     }
 
-    .tooltip__btn{
+    .tooltip__btn {
         visibility: visible;
         transition: 0.3s all;
         position: static;
@@ -525,14 +527,14 @@ a {
         height: 40px;
         left: calc(50% - 147px/2);
         top: 53px;
-        
+
         background: #FFB600;
         border-radius: 30px;
         border: none;
         cursor: pointer;
-        
+
         /* Inside Auto Layout */
-        
+
         flex: none;
         order: 2;
         flex-grow: 0;
@@ -540,16 +542,16 @@ a {
 
 
         font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 21px;
-/* identical to box height */
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height */
 
 
-/* Style_2 */
+        /* Style_2 */
 
-color: #000000;
+        color: #000000;
     }
 
 
@@ -595,7 +597,8 @@ color: #000000;
 
     .map__world {
         background-image: url(../../assets/icons/map640.svg);
-        width: 933px;
+        /* width: 933px; */
+        max-width: 320px;
         height: 600px;
         position: relative;
         top: 99px;
@@ -636,5 +639,15 @@ color: #000000;
     .toolbar__panda {
         display: hidden;
     }
+
+    /* / */
+.tooltip__alligator--320{
+    left: -290%
+}
+.tooltip__alligator--320::after {
+    left: 100%;
+    border-color: transparent transparent transparent #70CB0E;
+}
+/* //*/
 
 }
