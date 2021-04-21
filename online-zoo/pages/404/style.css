@@ -65,7 +65,7 @@ transition: 0.3s linear;
     .main-404{
         width: 550px;
         height: 582px;
-        background: url(../../assets/images/404-640.svg) no-repeat;
+        background: url(../../assets/images/404-640.svg) no-repeat center center;
 
     }
     .main-404__title{
@@ -87,9 +87,34 @@ transition: 0.3s linear;
 } */
 @media all and (max-width:480px){
     .main-404{
+        width: 360px;
+        height: 296px;
+        background: url(../../assets/images/404-320.svg) no-repeat center center;
+
+    }
+    .main-404__title{
+        font-style: normal;
+font-weight: bold;
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: 228px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .main-404__p {
+        font-size: 16px;
+line-height: 16px;
+        margin-top: 12px;
+    }
+}
+
+
+
+@media all and (max-width:320px){
+    .main-404{
         width: 260px;
         height: 296px;
-        background: url(../../assets/images/404-320.svg) no-repeat;
+        background: url(../../assets/images/404-320.svg) no-repeat center center;
 
     }
     .main-404__title{

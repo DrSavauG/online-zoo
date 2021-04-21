@@ -1,5 +1,6 @@
 .main-block {
-    min-width: 1920px;
+    /* max-width: 1920px; */
+    width: 100vw;
     height: 1025px;
     width: 100%;
     background: radial-gradient(71.89% 152.21% at 40.1% 50%,
@@ -21,7 +22,7 @@ a {
 
 .main-block__content {
     top: 0px;
-    width: 1920px;
+    min-width: 1200px;
     height: 1025px;
     margin-right: auto;
     margin-left: auto;
@@ -294,7 +295,8 @@ a {
 
 
 .main-block__header {
-    width: 1920px;
+    /* width: 1920px; */
+    width: 100vw;
     height: 80px;
     user-select: none;
     position: relative;
@@ -302,7 +304,9 @@ a {
 
 .main-block__map {
     position: relative;
-    width: 1920px;
+    /* width: 1920px; */
+    width: 100vw;
+
     height: 945px;
     display: flex;
     justify-content: center;
@@ -598,7 +602,7 @@ a {
     .map__world {
         background-image: url(../../assets/icons/map640.svg);
         /* width: 933px; */
-        max-width: 320px;
+        min-width: 320px;
         height: 600px;
         position: relative;
         top: 99px;
@@ -641,10 +645,10 @@ a {
     }
 
     /* / */
-.tooltip__alligator--320{
+.tooltip__left{
     left: -290%
 }
-.tooltip__alligator--320::after {
+.tooltip__left::after {
     left: 100%;
     border-color: transparent transparent transparent #70CB0E;
 }

@@ -80,7 +80,9 @@
 .header {
     /* position: relative; */
     z-index: 10;
-    width: 1920px;
+    /* width: 1920px; */
+    width: 100vw;
+
     height: 80px;
     user-select: none;
     position: relative;
@@ -173,8 +175,10 @@
 
 .footer__wrapper {
 
-    min-width: 1920px;
-    width: 100%;
+    /* min-width: 1920px; */
+    
+    width: 100vw;
+
     height: 270px;
     left: 0px;
     right: 0px;
@@ -186,7 +190,9 @@
     position: relative;
     margin: auto;
     height: 270px;
-    width: 1920px;
+    /* width: 1920px; */
+    width: 100vw;
+
     top: 0px;
 }
 
@@ -196,7 +202,8 @@
     background-repeat: no-repeat;
     width: 100%;
     margin: 0px;
-    left: 0.68%;
+    /* шоб не торчало справо */
+    /* left: 0.68%; */
     right: -0.09%;
     top: -7%;
     bottom: 10.27%;
