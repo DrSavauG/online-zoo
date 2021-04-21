@@ -388,6 +388,9 @@ a {
         width: 100vw;
     }
 
+    .map__zoom {
+        left: 95.6%;
+    }
     .main-block__map {
         width: 100vw;
     }
@@ -494,6 +497,9 @@ a {
         display: hidden;
     }
 
+    .map__zoom {
+        left: 92%;
+    }
     /* .toolbar__alligator {
         display: hidden;
 
@@ -576,11 +582,17 @@ a {
 
 
 @media all and (max-width: 320px) {
+
+
     /* //////////////// */
 
 
     html {
         overflow-x: hidden;
+    }
+
+    .map__zoom {
+        left: 84%;
     }
 
     .main-block {
