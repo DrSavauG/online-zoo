@@ -8,6 +8,7 @@
     margin: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .visually-hidden {
@@ -69,8 +70,7 @@
 
 /*#region header*/
 /* .header-block {
-    min-width: 1920px;
-    width: 100%;
+
     height: 700px;
     background: radial-gradient(71.89% 152.21% at 40.1% 50%,
             #B5E6FF 0%,
@@ -80,7 +80,6 @@
 .header {
     /* position: relative; */
     z-index: 10;
-    /* width: 1920px; */
     width: 100vw;
 
     height: 80px;
@@ -93,7 +92,7 @@
     width: 578px;
     height: 80px;
     display: flex;
-    margin-left: 380px;
+    /* margin-left: 380px; */
     justify-content: space-between;
 }
 
@@ -190,7 +189,6 @@
     position: relative;
     margin: auto;
     height: 270px;
-    /* width: 1920px; */
     width: 100vw;
 
     top: 0px;
@@ -200,7 +198,7 @@
     z-index: 0;
     position: absolute;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 100vw;
     margin: 0px;
     /* шоб не торчало справо */
     /* left: 0.68%; */
@@ -226,7 +224,8 @@
 .footer__container {
     position: relative;
     z-index: 1;
-    width: 1160px;
+    /* max-width: 1160px; */
+    max-width: 1200px;
     padding-top: 80px;
     margin: 0 auto;
 
@@ -375,6 +374,7 @@
     .header {
         width: 100%;
     }
+  
 
     .header-block__content {
         margin: 0 auto;
@@ -389,14 +389,17 @@
     /*Footer*/
 
     .footer__wrapper {
-        min-width: 1200px;
-        width: 100%;
+        /* max-width: 1200px; */
+        width: 100vw;
     }
 
     .footer {
         margin-left: auto;
         margin-right: auto;
-        width: 100%;
+        width: 100vw;
+    }
+    .footer__container{
+max-width: 1160px;
     }
 
     .footer__vector {
@@ -413,21 +416,21 @@
 @media all and (max-width: 640px) {
 
     .header-block {
-        min-width: 640px;
-        width: 100%;
+        /* min-width: 640px; */
+        width: 100vw;
         height: 700px;
     }
 
 
     /* #region header */
     .header {
-        width: 100%;
+        width: 100vw;
         z-index: 5;
     }
 
     .header-block__content {
         margin: 0 auto;
-        width: 100%;
+        width: 100vw;
         overflow: hidden;
     }
 
@@ -440,14 +443,14 @@
     /*#region Footer*/
 
     .footer__wrapper {
-        min-width: 640px;
-        width: 100%;
+        /* min-width: 640px/; */
+        width: 100vw;
         height: 359px;
     }
 
     .footer {
         margin: -80px auto 0;
-        width: 100%;
+        width: 100vw;
         height: 100%;
     }
 
@@ -457,14 +460,14 @@
     }
 
     .footer__container {
-        width: 100%;
+        width: 100vw;
         height: 157px;
         margin-top: 80px;
         align-self: baseline;
     }
 
     .footer__first-line {
-        width: 600px;
+        max-width: 600px;
         height: 57px;
         margin-right: auto;
         margin-left: auto;
@@ -472,7 +475,7 @@
     }
 
     .footer__second-line {
-        width: 100%;
+        width: 100vw;
         height: 50px;
         justify-content: start;
         margin-top: 50px;
@@ -506,7 +509,7 @@
     .footer__text--school {
         position: absolute;
 
-        width: 416px;
+        max-width: 416px;
         height: 21px;
         left: calc(50% - 416px/2);
         top: 316px;
@@ -531,7 +534,7 @@
 @media all and (max-width: 320px) {
  /*#region header */
  .header {
-    width: 100%;
+    width: 100vw;
 }
 
 .header__navigation {
@@ -565,27 +568,27 @@
     /*#region Footer*/
 
     .footer__wrapper {
-        min-width: 320px;
-        width: 100%;
+        /* max-width: 320px; */
+        width: 100vw;
         height: 742px;
     }
 
     .footer {
         margin-left: auto;
         margin-right: auto;
-        width: 100%;
+        width: 100vw;
         height: 100%;
     }
 
     .footer__container {
-        width: 300px;
+        max-width: 300px;
         height: 642px;
         margin-top: 80px;
         align-self: baseline;
     }
 
     .footer__first-line {
-        width: 300px;
+        max-width: 300px;
         height: 419px;
         flex-direction: column;
         align-items: center;
@@ -624,14 +627,14 @@
     }
 
     .footer__second-line {
-        width: 300px;
+        max-width: 300px;
         height: 173px;
         flex-direction: column;
     }
 
     .footer__school-logo {
         margin-left: 0px;
-        width: 300px;
+        max-width: 300px;
     }
 
     .footer__text {

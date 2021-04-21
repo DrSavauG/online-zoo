@@ -2,7 +2,7 @@
     /* max-width: 1920px; */
     width: 100vw;
     height: 1025px;
-    width: 100%;
+    /* width: 100%; */
     background: radial-gradient(71.89% 152.21% at 40.1% 50%,
             #B5E6FF 0%, #59C3FB 100%);
 }
@@ -22,7 +22,7 @@ a {
 
 .main-block__content {
     top: 0px;
-    min-width: 1200px;
+    max-width: 1200px;
     height: 1025px;
     margin-right: auto;
     margin-left: auto;
@@ -314,7 +314,8 @@ a {
 }
 
 .map__content {
-    width: 1160px;
+    /* max-width: 1160px; */
+    width: 100vw;
     height: 745px;
     align-self: center;
     margin: 0 auto;
@@ -322,9 +323,11 @@ a {
 }
 
 .map__world {
+    position: relative;
     width: 1160px;
     height: 745px;
     background-image: url(../../assets/images/map.svg);
+    /* background: no-repeat; */
 }
 
 
@@ -382,11 +385,11 @@ a {
 @media all and (max-width: 1200px) {
 
     .main-block {
-        min-width: 1200px;
+        width: 100vw;
     }
 
     .main-block__map {
-        width: 1200px;
+        width: 100vw;
     }
 
     .toolbar__eagle {
@@ -408,6 +411,10 @@ a {
         left: calc(50% - 64px/2 + 374px);
         top: calc(50% - 64px/2 + 62.5px);
     }
+    .map__world{
+        left: 19px;
+        top:-1px;
+    }
 
 }
 
@@ -420,24 +427,26 @@ a {
     }
 
     .main-block {
-        min-width: 640px;
-        width: 100%;
+        /* width: 640px; */
+        width: 100vw;
         height: 880px;
         ;
     }
 
     .main-block__content {
-        width: 640px;
+        /* width: 640px; */
+        width: 100vw;
         height: 880px;
     }
 
     .main-block__map {
-        width: 640px;
+        /* width: 640px; */
+        width: 100vw;
         height: 800px;
     }
 
     .map__content {
-        width: 640px;
+        width: 100vw;
         height: 800px;
 
     }
@@ -445,7 +454,8 @@ a {
     .map__world {
         background-image: url(../../assets/icons/map640.svg);
         /* width: 933px; */
-        max-width: 640px;
+        width: 640px;
+        /* width: 100vw; */
         height: 600px;
         position: relative;
         left: 0;
@@ -568,41 +578,39 @@ a {
 @media all and (max-width: 320px) {
     /* //////////////// */
 
-    .map__zoom {
-        /* left: -10px; */
-    }
+
 
     html {
         overflow-x: hidden;
     }
 
     .main-block {
-        min-width: 320px;
-        width: 100%;
+        /* width: 320px; */
+        width: 100vw;
         height: 880px;
         ;
     }
 
     .main-block__content {
-        width: 320px;
+        width: 100vw;
         height: 880px;
     }
 
     .main-block__map {
-        width: 320px;
+        width: 100vw;
         height: 800px;
     }
 
     .map__content {
-        width: 320px;
+        width: 100vw;
         height: 800px;
 
     }
 
     .map__world {
         background-image: url(../../assets/icons/map640.svg);
-        /* width: 933px; */
-        min-width: 320px;
+        width: 933px;
+        /* width: 100vw; */
         height: 600px;
         position: relative;
         top: 99px;
