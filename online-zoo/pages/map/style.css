@@ -480,8 +480,8 @@ a {
     }
 
     .toolbar__alligator {
-        top: 410px;
-        left: 100px;
+        left: calc(50% - 64px/2 - 189px);
+        top: calc(50% - 64px/2 + 43px);
     }
 
     .toolbar__gorilla {
@@ -494,10 +494,10 @@ a {
         display: hidden;
     }
 
-    .toolbar__alligator {
+    /* .toolbar__alligator {
         display: hidden;
 
-    }
+    } */
 
     /* 
     .eastern-drc-xy {
@@ -579,7 +579,6 @@ a {
     /* //////////////// */
 
 
-
     html {
         overflow-x: hidden;
     }
@@ -635,8 +634,10 @@ a {
     }
 
     .toolbar__alligator {
-        left: calc(50% - 64px/2 - 70px);
-        top: calc(50% - 64px/2 + 43px);
+        /* position: absolute; */
+        /* left: calc(50% - 64px/2 - 70px); */
+        left: calc(50% - 64px/2 - 335px);
+        /* top: calc(50% - 64px/2 + 43px); */
     }
 
     .toolbar__gorilla {
